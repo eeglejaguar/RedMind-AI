@@ -1,0 +1,10 @@
+﻿{
+    "module":  "RM-MOD-008",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "cookies":  [
+
+                               ]
+               }
+}

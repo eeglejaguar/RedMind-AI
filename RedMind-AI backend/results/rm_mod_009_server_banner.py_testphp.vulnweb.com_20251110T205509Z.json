@@ -1,0 +1,23 @@
+{
+    "module": "rm_mod_009_server_banner.py",
+    "module_path": "modules\\rm_mod_009_server_banner.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:55:07.802477Z",
+    "stdout": "{\"module\": \"rm_mod_009_server_banner\", \"target\": \"http://testphp.vulnweb.com\", \"vulnerable\": true, \"findings\": [{\"header\": \"nginx/1.19.0\"}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_009_server_banner",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "header": "nginx/1.19.0"
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:55:09.356418Z"
+}

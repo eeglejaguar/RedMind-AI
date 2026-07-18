@@ -1,0 +1,5 @@
+{
+  "error": "Execution failed",
+  "raw": "\n[+] Target       : www.google.com\n[+] Total Attacks: 40\n[+] Scan Started...\n\n",
+  "stderr": "Traceback (most recent call last):\n  File \"D:\\FYP\\RedMind-AI\\run_all_modules.py\", line 77, in <module>\n    show_progress(completed, total_checks)\n  File \"D:\\FYP\\RedMind-AI\\run_all_modules.py\", line 37, in show_progress\n    sys.stdout.write(f\"\\r[{bar}] {percent}% ({done}/{total})\")\n  File \"C:\\Users\\MSI\\AppData\\Local\\Programs\\Python\\Python310\\lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\nUnicodeEncodeError: 'charmap' codec can't encode character '\\u2588' in position 2: character maps to <undefined>\n"
+}

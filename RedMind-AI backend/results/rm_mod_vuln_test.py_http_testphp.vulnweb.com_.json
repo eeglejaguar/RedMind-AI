@@ -1,0 +1,8 @@
+{
+  "module": "rm_mod_vuln_test",
+  "target": "http://testphp.vulnweb.com/",
+  "vulnerable": true,
+  "findings": [
+    "Example vulnerability: SQLi in /login"
+  ]
+}

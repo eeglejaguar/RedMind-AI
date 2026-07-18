@@ -1,0 +1,14 @@
+{
+    "module": "rm_mod_054_reset_token_hints.py",
+    "module_path": "modules\\rm_mod_054_reset_token_hints.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-10-29T21:52:50.061018Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:52:50.150192Z"
+}

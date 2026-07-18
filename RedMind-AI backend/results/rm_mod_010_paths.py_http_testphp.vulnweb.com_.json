@@ -1,0 +1,12 @@
+{
+  "module": "rm_mod_010_paths",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/admin/",
+      "status": 200,
+      "len": 262
+    }
+  ]
+}

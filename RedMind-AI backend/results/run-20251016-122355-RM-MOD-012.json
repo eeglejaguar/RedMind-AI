@@ -1,0 +1,10 @@
+{
+  "module_id": "RM-MOD-012",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122355",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "cnames": [],
+    "takeover_indicators": []
+  }
+}

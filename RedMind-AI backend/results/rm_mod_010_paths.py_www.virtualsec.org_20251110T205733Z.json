@@ -1,0 +1,25 @@
+{
+    "module": "rm_mod_010_paths.py",
+    "module_path": "modules\\rm_mod_010_paths.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:24.557836Z",
+    "stdout": "{\"module\": \"rm_mod_010_paths\", \"target\": \"http://www.virtualsec.org\", \"vulnerable\": true, \"findings\": [{\"path\": \"/admin/\", \"status\": 200, \"len\": 5905}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_010_paths",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/admin/",
+                "status": 200,
+                "len": 5905
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:33.476511Z"
+}

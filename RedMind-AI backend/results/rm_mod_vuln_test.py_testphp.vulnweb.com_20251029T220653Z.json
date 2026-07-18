@@ -1,0 +1,21 @@
+{
+    "module": "rm_mod_vuln_test.py",
+    "module_path": "modules\\rm_mod_vuln_test.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T22:06:53.170009Z",
+    "stdout": "{\"module\": \"rm_mod_vuln_test\", \"target\": \"http://testphp.vulnweb.com/\", \"vulnerable\": true, \"findings\": [\"Example vulnerability: SQLi in /login\"]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_vuln_test",
+        "target": "http://testphp.vulnweb.com/",
+        "vulnerable": true,
+        "findings": [
+            "Example vulnerability: SQLi in /login"
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-10-29T22:06:53.284247Z"
+}

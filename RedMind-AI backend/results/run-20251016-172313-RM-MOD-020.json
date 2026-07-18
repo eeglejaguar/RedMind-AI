@@ -1,0 +1,10 @@
+﻿{
+    "module":  "RM-MOD-020",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "cloud_patterns_found":  [
+
+                                            ]
+               }
+}

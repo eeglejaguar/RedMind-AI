@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_052_hidden_fields.py",
+    "module_path": "modules\\rm_mod_052_hidden_fields.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:58:33.228280Z",
+    "stdout": "{\"module\": \"rm_mod_052_hidden_fields\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_052_hidden_fields",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:58:33.331777Z"
+}

@@ -1,0 +1,34 @@
+{
+  "module_id": "RM-MOD-005",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122338",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "checks": [
+      {
+        "path": "/",
+        "url": "https://www.virtualsec.org/",
+        "status_code": 200,
+        "dir_listing": false
+      },
+      {
+        "path": "/uploads/",
+        "url": "https://www.virtualsec.org/uploads/",
+        "status_code": 404,
+        "dir_listing": false
+      },
+      {
+        "path": "/static/",
+        "url": "https://www.virtualsec.org/static/",
+        "status_code": 404,
+        "dir_listing": false
+      },
+      {
+        "path": "/images/",
+        "url": "https://www.virtualsec.org/images/",
+        "status_code": 404,
+        "dir_listing": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+﻿"Module","Flagged","File","Short"
+"RM-MOD-001","True",".\results\run-20251016-172313-RM-MOD-001.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""x_powered_by"":  ""Not Found""
+}"
+"RM-MOD-001","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-002","False",".\results\run-20251016-172313-RM-MOD-002.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\u0027 OR \u00271\u0027=\u00271"",
+                       ""url"":  ""https://www.virtualsec.org?q=%27+OR+%271%27%3D%271"",
+                       ""status_code"":  200,
+                       ""reflected"":  false,
+                       ""sql_error"":  false,
+                       ""body_snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:is([sizes=\""auto\"" i], [sizes^=\""auto,\"" i]) { contain-intrinsic-size: 3000px 1500px }\u003c/style\u003e\n\t\u003clink rel=\u0027dns-prefetch\u0027 href=\u0027//fonts.googleapis.com\u0027 /\u003e\n\u003clink rel=\""alternate\"" type=\""application/rss+xml\"" title=\""Virtual Security-Architect of Information Security \u0026raquo; Feed\"" href=\""https://virtualsec.org/""
+                   },
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\u0027 OR 1=1 -- "",
+                       ""url"":  ""https://www.virtualsec.org?q=%27+OR+1%3D1+--+"",
+                       ""status_code"":  200,
+                       ""reflected"":  false,
+                       ""sql_error"":  false,
+                       ""body_snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:is([sizes=\""auto\"" i], [sizes^=\""auto,\"" i]) { contain-intrinsic-size: 3000px 1500px }\u003c/style\u003e\n\t\u003clink rel=\u0027dns-prefetch\u0027 href=\u0027//fonts.googleapis.com\u0027 /\u003e\n\u003clink rel=\""alternate\"" type=\""application/rss+xml\"" title=\""Virtual Security-Architect of Information Security \u0026raquo; Feed\"" href=\""https://virtualsec.org/""
+                   },
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\"" OR \""1\""=\""1"",
+                       ""url"":  ""https://www.virtualsec.org?q=%22+OR+%221%22%3D%221"",
+                       ""status_code"":  200,
+                       ""reflected"":  false,
+                       ""sql_error"":  false,
+                       ""body_snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:is([sizes=\""auto\"" i], [sizes^=\""auto,\"" i]) { contain-intrinsic-size: 3000px 1500px }\u003c/style\u003e\n\t\u003clink rel=\u0027dns-prefetch\u0027 href=\u0027//fonts.googleapis.com\u0027 /\u003e\n\u003clink rel=\""alternate\"" type=\""application/rss+xml\"" title=\""Virtual Security-Architect of Information Security \u0026raquo; Feed\"" href=\""https://virtualsec.org/""
+                   },
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\u0027; --"",
+                       ""url"":  ""https://www.virtualsec.org?q=%27%3B+--"",
+                       ""status_code"":  200,
+                       ""reflected"":  false,
+                       ""sql_error"":  false,
+                       ""body_snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:is([sizes=\""auto\"" i], [sizes^=\""auto,\"" i]) { contain-intrinsic-size: 3000px 1500px }\u003c/style\u003e\n\t\u003clink rel=\u0027dns-prefetch\u0027 href=\u0027//fonts.googleapis.com\u0027 /\u003e\n\u003clink rel=\""alternate\"" type=\""application/rss+xml\"" title=\""Virtual Security-Architect of Information Security \u0026raquo; Feed\"" href=\""https://virtualsec.org/""
+                   },
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\u0027 OR \u0027a\u0027=\u0027a"",
+                       ""url"":  ""https://www.virtualsec.org?q=%27+OR+%27a%27%3D%27a"",
+                       ""status_code"":  200,
+                       ""reflected"":  false,
+                       ""sql_error"":  false,
+                       ""body_snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:is([sizes=\""auto\"" i], [sizes^=\""auto,\"" i]) { contain-intrinsic-size: 3000px 1500px }\u003c/style\u003e\n\t\u003clink rel=\u0027dns-prefetch\u0027 href=\u0027//fonts.googleapis.com\u0027 /\u003e\n\u003clink rel=\""alternate\"" type=\""application/rss+xml\"" title=\""Virtual Security-Architect of Information Security \u0026raquo; Feed\"" href=\""https://virtualsec.org/""
+                   }
+               ]
+}"
+"RM-MOD-002","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-003","False",".\results\run-20251016-172313-RM-MOD-003.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\u003cscript\u003ealert(1)\u003c/script\u003e"",
+                       ""url"":  ""https://www.virtualsec.org?q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E"",
+                       ""status_code"":  200,
+                       ""reflected"":  false
+                   },
+                   {
+                       ""param"":  ""q"",
+                       ""payload"":  ""\""\u003e\u003cimg src=x onerror=alert(1)\u003e"",
+                       ""url"":  ""https://www.virtualsec.org?q=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E"",
+                       ""status_code"":  403,
+                       ""reflected"":  false
+                   }
+               ]
+}"
+"RM-MOD-003","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-004","False",".\results\run-20251016-172313-RM-MOD-004.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""param"":  ""next"",
+                       ""url"":  ""https://www.virtualsec.org?q=\u0026next=http%3A%2F%2Fexample.com%2F"",
+                       ""status_code"":  301,
+                       ""location"":  ""https://virtualsec.org/?q\u0026next=http%3A%2F%2Fexample.com%2F"",
+                       ""open_redirect"":  false
+                   },
+                   {
+                       ""param"":  ""redirect"",
+                       ""url"":  ""https://www.virtualsec.org?q=\u0026redirect=http%3A%2F%2Fexample.com%2F"",
+                       ""status_code"":  301,
+                       ""location"":  ""https://virtualsec.org/?q\u0026redirect=http%3A%2F%2Fexample.com%2F"",
+                       ""open_redirect"":  false
+                   },
+                   {
+                       ""param"":  ""url"",
+                       ""url"":  ""https://www.virtualsec.org?q=\u0026url=http%3A%2F%2Fexample.com%2F"",
+                       ""status_code"":  301,
+                       ""location"":  ""https://virtualsec.org/?q\u0026url=http%3A%2F%2Fexample.com%2F"",
+                       ""open_redirect"":  false
+                   },
+                   {
+                       ""param"":  ""return"",
+                       ""url"":  ""https://www.virtualsec.org?q=\u0026return=http%3A%2F%2Fexample.com%2F"",
+                       ""status_code"":  301,
+                       ""location"":  ""https://virtualsec.org/?q\u0026return=http%3A%2F%2Fexample.com%2F"",
+                       ""open_redirect"":  false
+                   },
+                   {
+                       ""param"":  ""r"",
+                       ""url"":  ""https://www.virtualsec.org?q=\u0026r=http%3A%2F%2Fexample.com%2F"",
+                       ""status_code"":  301,
+                       ""location"":  ""https://virtualsec.org/?q\u0026r=http%3A%2F%2Fexample.com%2F"",
+                       ""open_redirect"":  false
+                   }
+               ]
+}"
+"RM-MOD-004","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-005","False",".\results\run-20251016-172313-RM-MOD-005.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""path"":  ""/"",
+                       ""url"":  ""https://www.virtualsec.org/"",
+                       ""status_code"":  200,
+                       ""dir_listing"":  false
+                   },
+                   {
+                       ""path"":  ""/uploads/"",
+                       ""url"":  ""https://www.virtualsec.org/uploads/"",
+                       ""status_code"":  404,
+                       ""dir_listing"":  false
+                   },
+                   {
+                       ""path"":  ""/static/"",
+                       ""url"":  ""https://www.virtualsec.org/static/"",
+                       ""status_code"":  404,
+                       ""dir_listing"":  false
+                   },
+                   {
+                       ""path"":  ""/images/"",
+                       ""url"":  ""https://www.virtualsec.org/images/"",
+                       ""status_code"":  404,
+                       ""dir_listing"":  false
+                   }
+               ]
+}"
+"RM-MOD-005","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-006","True",".\results\run-20251016-172313-RM-MOD-006.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""method"":  ""OPTIONS"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""GET"",
+                       ""status_code"":  301,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""HEAD"",
+                       ""status_code"":  301,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""POST"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""PUT"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""DELETE"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""TRACE"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   },
+                   {
+                       ""method"":  ""PATCH"",
+                       ""status_code"":  200,
+                       ""allowed"":  true
+                   }
+               ]
+}"
+"RM-MOD-006","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-007","True",".\results\run-20251016-172313-RM-MOD-007.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""x_frame_options"":  false,
+    ""csp_frame_ancestors"":  false,
+    ""headers"":  {
+                    ""Connection"":  ""Keep-Alive"",
+                    ""Keep-Alive"":  ""timeout=5, max=100"",
+                    ""content-type"":  ""text/html; charset=UTF-8"",
+                    ""link"":  ""\u003chttps://virtualsec.org/wp-json/\u003e; rel=\""https://api.w.org/\"", \u003chttps://virtualsec.org/wp-json/wp/v2/pages/316\u003e; rel=\""alternate\""; title=\""JSON\""; type=\""application/json\"", \u003chttps://virtualsec.org/\u003e; rel=shortlink"",
+                    ""transfer-encoding"":  ""chunked"",
+                    ""content-encoding"":  ""gzip"",
+                    ""vary"":  ""Accept-Encoding,User-Agent"",
+                    ""date"":  ""Thu, 16 Oct 2025 12:23:47 GMT"",
+                    ""server"":  ""LiteSpeed"",
+                    ""alt-svc"":  ""h3=\"":443\""; ma=2592000, h3-29=\"":443\""; ma=2592000, h3-Q050=\"":443\""; ma=2592000, h3-Q046=\"":443\""; ma=2592000, h3-Q043=\"":443\""; ma=2592000, quic=\"":443\""; ma=2592000; v=\""43,46\""""
+                }
+}"
+"RM-MOD-007","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-008","False",".\results\run-20251016-172313-RM-MOD-008.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""cookies"":  [
+
+                ]
+}"
+"RM-MOD-008","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-009","True",".\results\run-20251016-172313-RM-MOD-009.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""server_header"":  ""LiteSpeed"",
+    ""x_powered_by"":  null,
+    ""headers"":  {
+                    ""Connection"":  ""Keep-Alive"",
+                    ""Keep-Alive"":  ""timeout=5, max=100"",
+                    ""content-type"":  ""text/html; charset=UTF-8"",
+                    ""link"":  ""\u003chttps://virtualsec.org/wp-json/\u003e; rel=\""https://api.w.org/\"", \u003chttps://virtualsec.org/wp-json/wp/v2/pages/316\u003e; rel=\""alternate\""; title=\""JSON\""; type=\""application/json\"", \u003chttps://virtualsec.org/\u003e; rel=shortlink"",
+                    ""transfer-encoding"":  ""chunked"",
+                    ""content-encoding"":  ""gzip"",
+                    ""vary"":  ""Accept-Encoding,User-Agent"",
+                    ""date"":  ""Thu, 16 Oct 2025 12:23:50 GMT"",
+                    ""server"":  ""LiteSpeed"",
+                    ""alt-svc"":  ""h3=\"":443\""; ma=2592000, h3-29=\"":443\""; ma=2592000, h3-Q050=\"":443\""; ma=2592000, h3-Q046=\"":443\""; ma=2592000, h3-Q043=\"":443\""; ma=2592000, quic=\"":443\""; ma=2592000; v=\""43,46\""""
+                }
+}"
+"RM-MOD-009","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-010","True",".\results\run-20251016-172313-RM-MOD-010.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""checks"":  [
+                   {
+                       ""path"":  ""/admin"",
+                       ""url"":  ""https://www.virtualsec.org/admin"",
+                       ""status_code"":  301
+                   },
+                   {
+                       ""path"":  ""/administrator"",
+                       ""url"":  ""https://www.virtualsec.org/administrator"",
+                       ""status_code"":  301
+                   },
+                   {
+                       ""path"":  ""/login"",
+                       ""url"":  ""https://www.virtualsec.org/login"",
+                       ""status_code"":  301
+                   },
+                   {
+                       ""path"":  ""/wp-admin"",
+                       ""url"":  ""https://www.virtualsec.org/wp-admin"",
+                       ""status_code"":  301
+                   },
+                   {
+                       ""path"":  ""/admin/login"",
+                       ""url"":  ""https://www.virtualsec.org/admin/login"",
+                       ""status_code"":  301
+                   }
+               ]
+}"
+"RM-MOD-010","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-011","True",".\results\run-20251016-172313-RM-MOD-011.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""has_csp"":  false,
+    ""script_src"":  false,
+    ""frame_ancestors"":  false,
+    ""csp"":  null
+}"
+"RM-MOD-011","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-012","False",".\results\run-20251016-172313-RM-MOD-012.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""cnames"":  [
+
+               ],
+    ""takeover_indicators"":  [
+
+                            ]
+}"
+"RM-MOD-012","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-013","True",".\results\run-20251016-172313-RM-MOD-013.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""hsts"":  {
+                 ""has_hsts"":  false
+             }
+}"
+"RM-MOD-013","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-014","False",".\results\run-20251016-172313-RM-MOD-014.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""cert_subject"":  {
+                         ""commonName"":  ""*.virtualsec.org""
+                     },
+    ""cert_issuer"":  {
+                        ""countryName"":  ""US"",
+                        ""organizationName"":  ""Let\u0027s Encrypt"",
+                        ""commonName"":  ""R13""
+                    },
+    ""notAfter"":  ""Dec 31 15:29:57 2025 GMT""
+}"
+"RM-MOD-014","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-015","ERROR","","The remote server returned an error: (404) Not Found."
+"RM-MOD-016","True",".\results\run-20251016-172313-RM-MOD-016.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""disallows"":  [
+                      ""/wp-content/uploads/wc-logs/"",
+                      ""/wp-content/uploads/woocommerce_transient_files/"",
+                      ""/wp-content/uploads/woocommerce_uploads/"",
+                      ""/wp-admin/""
+                  ],
+    ""robots"":  ""User-agent: *\nDisallow: /wp-content/uploads/wc-logs/\nDisallow: /wp-content/uploads/woocommerce_transient_files/\nDisallow: /wp-content/uploads/woocommerce_uploads/\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://virtualsec.org/wp-sitemap.xml\n""
+}"
+"RM-MOD-016","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-017","False",".\results\run-20251016-172313-RM-MOD-017.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""cors_origin"":  null,
+    ""insecure_cors"":  false
+}"
+"RM-MOD-017","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-018","False",".\results\run-20251016-172313-RM-MOD-018.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""probe_url"":  ""https://www.virtualsec.org?callback=testcb"",
+    ""status_code"":  200,
+    ""jsonp"":  false,
+    ""snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect o""
+}"
+"RM-MOD-018","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-019","True",".\results\run-20251016-172313-RM-MOD-019.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""scripts"":  [
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""3.7.1""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""3.4.1""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.2.1"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""2.7.0""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery.magnific-popup.min.js?ver=1.0.0"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""1.0.0""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery.counterup.min.js?ver=1.0.0"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""1.0.0""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery-ui.min.js?ver=1.0.0"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""1.0.0""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-content/themes/webteck/assets/js/tilt.jquery.min.js?ver=1.0.0"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""1.0.0""
+                    },
+                    {
+                        ""script"":  ""https://virtualsec.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"",
+                        ""lib"":  ""jquery"",
+                        ""version"":  ""1.13.3""
+                    }
+                ]
+}"
+"RM-MOD-019","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-020","False",".\results\run-20251016-172313-RM-MOD-020.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""cloud_patterns_found"":  [
+
+                             ]
+}"
+"RM-MOD-020","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"RM-MOD-021","False",".\results\run-20251016-172313-RM-MOD-021.json","{
+    ""target"":  ""https://www.virtualsec.org"",
+    ""status_code"":  200,
+    ""emails"":  [
+
+               ],
+    ""hints"":  [
+
+              ],
+    ""snippet"":  ""\u003c!doctype html\u003e\r\n\u003chtml lang=\""en-US\"" prefix=\""og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\"" itemscope itemtype=\""http://schema.org/Offer\""\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\""UTF-8\""\u003e\r\n    \u003cmeta name=\""viewport\"" content=\""width=device-width, initial-scale=1, shrink-to-fit=no\""\u003e\r\n    \u003cmeta http-equiv=\""X-UA-Compatible\"" content=\""IE=edge\""\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:""
+}"
+"RM-MOD-021","ERROR","","The term 'if' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."

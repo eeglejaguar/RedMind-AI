@@ -1,0 +1,15 @@
+﻿{
+    "module":  "RM-MOD-014",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "cert_subject":  {
+                                        "commonName":  "*.virtualsec.org"
+                                    },
+                   "cert_issuer":  {
+                                       "countryName":  "US",
+                                       "organizationName":  "Let\u0027s Encrypt",
+                                       "commonName":  "R13"
+                                   },
+                   "notAfter":  "Dec 31 15:29:57 2025 GMT"
+               }
+}

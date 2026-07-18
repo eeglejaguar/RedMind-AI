@@ -1,0 +1,55 @@
+{
+  "module_id": "RM-MOD-002",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122326",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "checks": [
+      {
+        "param": "q",
+        "payload": "' OR '1'='1",
+        "url": "https://www.virtualsec.org?q=%27+OR+%271%27%3D%271",
+        "status_code": 200,
+        "reflected": false,
+        "sql_error": false,
+        "body_snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect of Information Security</title>\n<meta name='robots' content='max-image-preview:large' />\n\t<style>img:is([sizes=\"auto\" i], [sizes^=\"auto,\" i]) { contain-intrinsic-size: 3000px 1500px }</style>\n\t<link rel='dns-prefetch' href='//fonts.googleapis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Virtual Security-Architect of Information Security &raquo; Feed\" href=\"https://virtualsec.org/"
+      },
+      {
+        "param": "q",
+        "payload": "' OR 1=1 -- ",
+        "url": "https://www.virtualsec.org?q=%27+OR+1%3D1+--+",
+        "status_code": 200,
+        "reflected": false,
+        "sql_error": false,
+        "body_snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect of Information Security</title>\n<meta name='robots' content='max-image-preview:large' />\n\t<style>img:is([sizes=\"auto\" i], [sizes^=\"auto,\" i]) { contain-intrinsic-size: 3000px 1500px }</style>\n\t<link rel='dns-prefetch' href='//fonts.googleapis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Virtual Security-Architect of Information Security &raquo; Feed\" href=\"https://virtualsec.org/"
+      },
+      {
+        "param": "q",
+        "payload": "\" OR \"1\"=\"1",
+        "url": "https://www.virtualsec.org?q=%22+OR+%221%22%3D%221",
+        "status_code": 200,
+        "reflected": false,
+        "sql_error": false,
+        "body_snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect of Information Security</title>\n<meta name='robots' content='max-image-preview:large' />\n\t<style>img:is([sizes=\"auto\" i], [sizes^=\"auto,\" i]) { contain-intrinsic-size: 3000px 1500px }</style>\n\t<link rel='dns-prefetch' href='//fonts.googleapis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Virtual Security-Architect of Information Security &raquo; Feed\" href=\"https://virtualsec.org/"
+      },
+      {
+        "param": "q",
+        "payload": "'; --",
+        "url": "https://www.virtualsec.org?q=%27%3B+--",
+        "status_code": 200,
+        "reflected": false,
+        "sql_error": false,
+        "body_snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect of Information Security</title>\n<meta name='robots' content='max-image-preview:large' />\n\t<style>img:is([sizes=\"auto\" i], [sizes^=\"auto,\" i]) { contain-intrinsic-size: 3000px 1500px }</style>\n\t<link rel='dns-prefetch' href='//fonts.googleapis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Virtual Security-Architect of Information Security &raquo; Feed\" href=\"https://virtualsec.org/"
+      },
+      {
+        "param": "q",
+        "payload": "' OR 'a'='a",
+        "url": "https://www.virtualsec.org?q=%27+OR+%27a%27%3D%27a",
+        "status_code": 200,
+        "reflected": false,
+        "sql_error": false,
+        "body_snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect of Information Security</title>\n<meta name='robots' content='max-image-preview:large' />\n\t<style>img:is([sizes=\"auto\" i], [sizes^=\"auto,\" i]) { contain-intrinsic-size: 3000px 1500px }</style>\n\t<link rel='dns-prefetch' href='//fonts.googleapis.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Virtual Security-Architect of Information Security &raquo; Feed\" href=\"https://virtualsec.org/"
+      }
+    ]
+  }
+}

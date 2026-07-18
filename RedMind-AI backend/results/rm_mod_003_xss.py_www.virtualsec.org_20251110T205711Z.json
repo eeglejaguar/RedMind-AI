@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_003_xss.py",
+    "module_path": "modules\\rm_mod_003_xss.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:07.016937Z",
+    "stdout": "{\n  \"module\": \"rm_mod_003_xss\",\n  \"target\": \"http://www.virtualsec.org\",\n  \"vulnerable\": false,\n  \"findings\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_003_xss",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:11.595064Z"
+}

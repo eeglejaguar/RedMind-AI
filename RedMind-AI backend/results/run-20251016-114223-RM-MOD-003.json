@@ -1,0 +1,24 @@
+{
+  "module_id": "RM-MOD-003",
+  "target": "https://virtualsec.org/search?q=test",
+  "timestamp_utc": "20251016-114223",
+  "result": {
+    "target": "https://virtualsec.org/search?q=test",
+    "checks": [
+      {
+        "param": "q",
+        "payload": "<script>alert(1)</script>",
+        "url": "https://virtualsec.org/search?q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E",
+        "status_code": 404,
+        "reflected": false
+      },
+      {
+        "param": "q",
+        "payload": "\"><img src=x onerror=alert(1)>",
+        "url": "https://virtualsec.org/search?q=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E",
+        "status_code": 403,
+        "reflected": false
+      }
+    ]
+  }
+}

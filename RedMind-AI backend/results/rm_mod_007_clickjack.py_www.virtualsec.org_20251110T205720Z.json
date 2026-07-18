@@ -1,0 +1,30 @@
+{
+    "module": "rm_mod_007_clickjack.py",
+    "module_path": "modules\\rm_mod_007_clickjack.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:15.737459Z",
+    "stdout": "{\"module\": \"rm_mod_007_clickjack\", \"target\": \"http://www.virtualsec.org\", \"vulnerable\": true, \"findings\": [{\"path\": \"/\", \"xfo\": \"\", \"csp\": \"\"}, {\"path\": \"/product.php\", \"xfo\": \"\", \"csp\": \"\"}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_007_clickjack",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/",
+                "xfo": "",
+                "csp": ""
+            },
+            {
+                "path": "/product.php",
+                "xfo": "",
+                "csp": ""
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:20.750171Z"
+}

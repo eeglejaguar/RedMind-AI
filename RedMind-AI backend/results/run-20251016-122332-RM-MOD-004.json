@@ -1,0 +1,45 @@
+{
+  "module_id": "RM-MOD-004",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122332",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "checks": [
+      {
+        "param": "next",
+        "url": "https://www.virtualsec.org?q=&next=http%3A%2F%2Fexample.com%2F",
+        "status_code": 301,
+        "location": "https://virtualsec.org/?q&next=http%3A%2F%2Fexample.com%2F",
+        "open_redirect": false
+      },
+      {
+        "param": "redirect",
+        "url": "https://www.virtualsec.org?q=&redirect=http%3A%2F%2Fexample.com%2F",
+        "status_code": 301,
+        "location": "https://virtualsec.org/?q&redirect=http%3A%2F%2Fexample.com%2F",
+        "open_redirect": false
+      },
+      {
+        "param": "url",
+        "url": "https://www.virtualsec.org?q=&url=http%3A%2F%2Fexample.com%2F",
+        "status_code": 301,
+        "location": "https://virtualsec.org/?q&url=http%3A%2F%2Fexample.com%2F",
+        "open_redirect": false
+      },
+      {
+        "param": "return",
+        "url": "https://www.virtualsec.org?q=&return=http%3A%2F%2Fexample.com%2F",
+        "status_code": 301,
+        "location": "https://virtualsec.org/?q&return=http%3A%2F%2Fexample.com%2F",
+        "open_redirect": false
+      },
+      {
+        "param": "r",
+        "url": "https://www.virtualsec.org?q=&r=http%3A%2F%2Fexample.com%2F",
+        "status_code": 301,
+        "location": "https://virtualsec.org/?q&r=http%3A%2F%2Fexample.com%2F",
+        "open_redirect": false
+      }
+    ]
+  }
+}

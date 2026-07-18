@@ -1,0 +1,14 @@
+{
+    "module": "rm_mod_014_tls_info.py",
+    "module_path": "modules\\rm_mod_014_tls_info.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:51:24.862431Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:51:24.917425Z"
+}

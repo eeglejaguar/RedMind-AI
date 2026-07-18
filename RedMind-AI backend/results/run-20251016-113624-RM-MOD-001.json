@@ -1,0 +1,10 @@
+{
+  "module_id": "RM-MOD-001",
+  "target": "https://example.com",
+  "timestamp_utc": "20251016-113624",
+  "result": {
+    "target": "https://example.com",
+    "status_code": 200,
+    "x_powered_by": "Not Found"
+  }
+}

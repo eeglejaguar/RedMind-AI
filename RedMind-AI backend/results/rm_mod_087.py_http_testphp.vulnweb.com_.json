@@ -1,0 +1,6 @@
+{
+  "module": "rm_mod_087",
+  "target": "http://testphp.vulnweb.com/",
+  "vulnerable": false,
+  "findings": []
+}

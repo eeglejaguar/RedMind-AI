@@ -1,0 +1,8 @@
+{
+  "module": "rm_mod_051",
+  "target": "http://testphp.vulnweb.com/",
+  "vulnerable": true,
+  "findings": [
+    "Possible SQL error-based injection."
+  ]
+}

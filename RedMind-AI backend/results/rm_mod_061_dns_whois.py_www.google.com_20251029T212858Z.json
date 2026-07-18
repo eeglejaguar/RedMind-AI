@@ -1,0 +1,14 @@
+{
+    "module": "rm_mod_061_dns_whois.py",
+    "module_path": "modules\\rm_mod_061_dns_whois.py",
+    "target": "http://www.google.com/",
+    "started_at": "2025-10-29T21:28:58.660264Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:28:58.727459Z"
+}

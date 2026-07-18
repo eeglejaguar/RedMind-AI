@@ -1,0 +1,131 @@
+{
+    "module": "rm_mod_015_exposed_files.py",
+    "module_path": "modules\\rm_mod_015_exposed_files.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:35:27.159480Z",
+    "stdout": "{\n  \"target\": \"http://testphp.vulnweb.com/\",\n  \"checks\": [\n    {\n      \"path\": \"/.env\",\n      \"checked_url\": \"http://testphp.vulnweb.com/.env\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/.git/config\",\n      \"checked_url\": \"http://testphp.vulnweb.com/.git/config\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/.git/HEAD\",\n      \"checked_url\": \"http://testphp.vulnweb.com/.git/HEAD\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/.htaccess\",\n      \"checked_url\": \"http://testphp.vulnweb.com/.htaccess\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/backup.zip\",\n      \"checked_url\": \"http://testphp.vulnweb.com/backup.zip\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/backup.tar.gz\",\n      \"checked_url\": \"http://testphp.vulnweb.com/backup.tar.gz\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/db.sql\",\n      \"checked_url\": \"http://testphp.vulnweb.com/db.sql\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/wp-config.php.bak\",\n      \"checked_url\": \"http://testphp.vulnweb.com/wp-config.php.bak\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/config.php.bak\",\n      \"checked_url\": \"http://testphp.vulnweb.com/config.php.bak\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/site.bak\",\n      \"checked_url\": \"http://testphp.vulnweb.com/site.bak\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/id_rsa\",\n      \"checked_url\": \"http://testphp.vulnweb.com/id_rsa\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/id_rsa.pub\",\n      \"checked_url\": \"http://testphp.vulnweb.com/id_rsa.pub\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/credentials.json\",\n      \"checked_url\": \"http://testphp.vulnweb.com/credentials.json\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/composer.lock\",\n      \"checked_url\": \"http://testphp.vulnweb.com/composer.lock\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/package.json\",\n      \"checked_url\": \"http://testphp.vulnweb.com/package.json\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    },\n    {\n      \"path\": \"/web.config\",\n      \"checked_url\": \"http://testphp.vulnweb.com/web.config\",\n      \"status\": 404,\n      \"snippet\": null,\n      \"issues\": []\n    }\n  ],\n  \"total_checked\": 16\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "target": "http://testphp.vulnweb.com/",
+        "checks": [
+            {
+                "path": "/.env",
+                "checked_url": "http://testphp.vulnweb.com/.env",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/.git/config",
+                "checked_url": "http://testphp.vulnweb.com/.git/config",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/.git/HEAD",
+                "checked_url": "http://testphp.vulnweb.com/.git/HEAD",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/.htaccess",
+                "checked_url": "http://testphp.vulnweb.com/.htaccess",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/backup.zip",
+                "checked_url": "http://testphp.vulnweb.com/backup.zip",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/backup.tar.gz",
+                "checked_url": "http://testphp.vulnweb.com/backup.tar.gz",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/db.sql",
+                "checked_url": "http://testphp.vulnweb.com/db.sql",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/wp-config.php.bak",
+                "checked_url": "http://testphp.vulnweb.com/wp-config.php.bak",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/config.php.bak",
+                "checked_url": "http://testphp.vulnweb.com/config.php.bak",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/site.bak",
+                "checked_url": "http://testphp.vulnweb.com/site.bak",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/id_rsa",
+                "checked_url": "http://testphp.vulnweb.com/id_rsa",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/id_rsa.pub",
+                "checked_url": "http://testphp.vulnweb.com/id_rsa.pub",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/credentials.json",
+                "checked_url": "http://testphp.vulnweb.com/credentials.json",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/composer.lock",
+                "checked_url": "http://testphp.vulnweb.com/composer.lock",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/package.json",
+                "checked_url": "http://testphp.vulnweb.com/package.json",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            },
+            {
+                "path": "/web.config",
+                "checked_url": "http://testphp.vulnweb.com/web.config",
+                "status": 404,
+                "snippet": null,
+                "issues": []
+            }
+        ],
+        "total_checked": 16
+    },
+    "conclusion": "SAFE",
+    "reason": "no explicit vulnerabilities found (heuristic)",
+    "error": null,
+    "finished_at": "2025-10-29T21:35:37.021842Z"
+}

@@ -1,0 +1,24 @@
+{
+    "module": "rm_mod_004_openredirect.py",
+    "module_path": "modules\\rm_mod_004_openredirect.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:11.851239Z",
+    "stdout": "{\n  \"module\": \"rm_mod_004_openredirect\",\n  \"target\": \"http://www.virtualsec.org\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"action\": \"http://www.virtualsec.org/hpp/params.php\",\n      \"location\": \"https://www.virtualsec.org/hpp/params.php?p=http%3A%2F%2Fevil.example.com%2F&pp=12\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_004_openredirect",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": true,
+        "findings": [
+            {
+                "action": "http://www.virtualsec.org/hpp/params.php",
+                "location": "https://www.virtualsec.org/hpp/params.php?p=http%3A%2F%2Fevil.example.com%2F&pp=12"
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:12.935406Z"
+}

@@ -1,0 +1,14 @@
+{
+    "module": "__init__.py",
+    "module_path": "modules\\__init__.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:51:22.418527Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:51:22.483385Z"
+}

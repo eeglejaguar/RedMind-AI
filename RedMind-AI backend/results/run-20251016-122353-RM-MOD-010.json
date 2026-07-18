@@ -1,0 +1,35 @@
+{
+  "module_id": "RM-MOD-010",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122353",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "checks": [
+      {
+        "path": "/admin",
+        "url": "https://www.virtualsec.org/admin",
+        "status_code": 301
+      },
+      {
+        "path": "/administrator",
+        "url": "https://www.virtualsec.org/administrator",
+        "status_code": 301
+      },
+      {
+        "path": "/login",
+        "url": "https://www.virtualsec.org/login",
+        "status_code": 301
+      },
+      {
+        "path": "/wp-admin",
+        "url": "https://www.virtualsec.org/wp-admin",
+        "status_code": 301
+      },
+      {
+        "path": "/admin/login",
+        "url": "https://www.virtualsec.org/admin/login",
+        "status_code": 301
+      }
+    ]
+  }
+}

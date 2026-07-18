@@ -1,0 +1,30 @@
+{
+    "module": "rm_mod_006_http_methods.py",
+    "module_path": "modules\\rm_mod_006_http_methods.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:55:00.678547Z",
+    "stdout": "{\"module\": \"rm_mod_006_http_methods\", \"target\": \"http://testphp.vulnweb.com\", \"vulnerable\": true, \"findings\": [{\"path\": \"http://testphp.vulnweb.com/product.php\", \"method\": \"PUT\", \"status\": 200}, {\"path\": \"http://testphp.vulnweb.com/product.php\", \"method\": \"DELETE\", \"status\": 200}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_006_http_methods",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "http://testphp.vulnweb.com/product.php",
+                "method": "PUT",
+                "status": 200
+            },
+            {
+                "path": "http://testphp.vulnweb.com/product.php",
+                "method": "DELETE",
+                "status": 200
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:55:04.620848Z"
+}

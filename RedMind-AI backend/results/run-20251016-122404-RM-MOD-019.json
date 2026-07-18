@@ -1,0 +1,51 @@
+{
+  "module_id": "RM-MOD-019",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122404",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "status_code": 200,
+    "scripts": [
+      {
+        "script": "https://virtualsec.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "lib": "jquery",
+        "version": "3.7.1"
+      },
+      {
+        "script": "https://virtualsec.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "lib": "jquery",
+        "version": "3.4.1"
+      },
+      {
+        "script": "https://virtualsec.org/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.2.1",
+        "lib": "jquery",
+        "version": "2.7.0"
+      },
+      {
+        "script": "https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery.magnific-popup.min.js?ver=1.0.0",
+        "lib": "jquery",
+        "version": "1.0.0"
+      },
+      {
+        "script": "https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery.counterup.min.js?ver=1.0.0",
+        "lib": "jquery",
+        "version": "1.0.0"
+      },
+      {
+        "script": "https://virtualsec.org/wp-content/themes/webteck/assets/js/jquery-ui.min.js?ver=1.0.0",
+        "lib": "jquery",
+        "version": "1.0.0"
+      },
+      {
+        "script": "https://virtualsec.org/wp-content/themes/webteck/assets/js/tilt.jquery.min.js?ver=1.0.0",
+        "lib": "jquery",
+        "version": "1.0.0"
+      },
+      {
+        "script": "https://virtualsec.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "lib": "jquery",
+        "version": "1.13.3"
+      }
+    ]
+  }
+}

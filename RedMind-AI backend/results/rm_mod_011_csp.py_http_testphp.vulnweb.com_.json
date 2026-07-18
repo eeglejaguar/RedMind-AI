@@ -1,0 +1,19 @@
+{
+  "module": "rm_mod_011_csp",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/",
+      "csp": ""
+    },
+    {
+      "path": "/product.php",
+      "csp": ""
+    },
+    {
+      "path": "/login.php",
+      "csp": ""
+    }
+  ]
+}

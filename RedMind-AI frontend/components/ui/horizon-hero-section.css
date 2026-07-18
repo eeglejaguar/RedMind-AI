@@ -1,0 +1,203 @@
+/* horizon-hero-section.css
+   This component was shipped with zero stylesheet across every prior version
+   of this file in this conversation. These classes were always undefined. */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  background: #0a0505;
+  overflow: hidden;
+}
+
+.hero-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  display: block;
+}
+
+/* ---- Side menu ---- */
+.side-menu {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: #f5e6e6;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ff1a1a;
+  box-shadow: 0 0 8px rgba(255, 26, 26, 0.6);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #8a6a6a;
+}
+
+/* ---- Main hero content (first viewport) ---- */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero-title {
+  font-family: 'Chakra Petch', 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: clamp(48px, 12vw, 160px);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: #f5e6e6;
+  text-shadow: 0 0 24px rgba(255, 26, 26, 0.7), 0 0 60px rgba(255, 26, 26, 0.35);
+  margin: 0 0 24px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title-char {
+  display: inline-block;
+  white-space: pre;
+}
+
+.hero-subtitle {
+  max-width: 640px;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0a0505;
+  background: #ff1a1a;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 26, 26, 0.5);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.hero-cta:hover {
+  background: #ff3333;
+  box-shadow: 0 0 32px rgba(255, 51, 51, 0.75);
+  transform: translateY(-2px);
+}
+
+.subtitle-line {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(14px, 1.6vw, 18px);
+  color: #8a6a6a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---- Scroll progress indicator ---- */
+.scroll-progress {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.scroll-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8a6a6a;
+}
+
+.progress-track {
+  width: 160px;
+  height: 2px;
+  background: rgba(255, 26, 26, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ff1a1a;
+  box-shadow: 0 0 8px rgba(255, 26, 26, 0.8);
+  transition: width 0.1s linear;
+}
+
+.section-counter {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #6b0f0f;
+  letter-spacing: 2px;
+}
+
+/* ---- Scroll sections (subsequent full-height panels) ---- */
+.scroll-sections {
+  position: relative;
+  z-index: 5;
+}
+
+.content-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.content-section .hero-title {
+  display: block;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  .side-menu {
+    top: 20px;
+    left: 20px;
+  }
+
+  .scroll-progress {
+    bottom: 20px;
+  }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+}

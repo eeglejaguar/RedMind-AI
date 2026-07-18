@@ -1,0 +1,13 @@
+{
+  "module_id": "RM-MOD-011",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122355",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "status_code": 200,
+    "has_csp": false,
+    "script_src": false,
+    "frame_ancestors": false,
+    "csp": null
+  }
+}

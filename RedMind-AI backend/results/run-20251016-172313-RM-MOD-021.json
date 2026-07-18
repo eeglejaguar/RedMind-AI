@@ -1,0 +1,14 @@
+﻿{
+    "module":  "RM-MOD-021",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "emails":  [
+
+                              ],
+                   "hints":  [
+
+                             ],
+                   "snippet":  "\u003c!doctype html\u003e\r\n\u003chtml lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\"\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\"UTF-8\"\u003e\r\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\u003e\r\n    \u003cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"\u003e\r\n    \u003ctitle\u003eVirtual Security-Architect of Information Security\u003c/title\u003e\n\u003cmeta name=\u0027robots\u0027 content=\u0027max-image-preview:large\u0027 /\u003e\n\t\u003cstyle\u003eimg:"
+               }
+}

@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_005.py",
+    "module_path": "modules\\rm_mod_005.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:09.998066Z",
+    "stdout": "{\"module\": \"rm_mod_005\", \"target\": \"http://testphp.vulnweb.com/\", \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_005",
+        "target": "http://testphp.vulnweb.com/",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:10.232826Z"
+}

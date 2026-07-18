@@ -1,0 +1,24 @@
+{
+  "module_id": "RM-MOD-003",
+  "target": "http://127.0.0.1:3001/vulnerable?q=test",
+  "timestamp_utc": "20251016-120703",
+  "result": {
+    "target": "http://127.0.0.1:3001/vulnerable?q=test",
+    "checks": [
+      {
+        "param": "q",
+        "payload": "<script>alert(1)</script>",
+        "url": "http://127.0.0.1:3001/vulnerable?q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E",
+        "status_code": 200,
+        "reflected": true
+      },
+      {
+        "param": "q",
+        "payload": "\"><img src=x onerror=alert(1)>",
+        "url": "http://127.0.0.1:3001/vulnerable?q=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E",
+        "status_code": 200,
+        "reflected": true
+      }
+    ]
+  }
+}

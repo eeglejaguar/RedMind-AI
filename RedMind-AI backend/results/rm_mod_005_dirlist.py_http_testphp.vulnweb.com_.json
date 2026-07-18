@@ -1,0 +1,11 @@
+{
+  "module": "rm_mod_005_dirlist",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/admin/",
+      "status": 200
+    }
+  ]
+}

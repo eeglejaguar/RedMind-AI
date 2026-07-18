@@ -1,0 +1,14 @@
+{
+    "module": "rm_mod_052_hidden_fields.py",
+    "module_path": "modules\\rm_mod_052_hidden_fields.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:42:31.033417Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:42:31.096497Z"
+}

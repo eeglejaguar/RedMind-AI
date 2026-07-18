@@ -1,0 +1,37 @@
+{
+  "module": "rm_mod_015_exposed_files",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/showimage.php?file=./pictures/1.jpg",
+      "status": 200,
+      "len": 12426
+    },
+    {
+      "path": "/showimage.php?file=./pictures/2.jpg",
+      "status": 200,
+      "len": 3324
+    },
+    {
+      "path": "/product.php?pic=1",
+      "status": 200,
+      "len": 6428
+    },
+    {
+      "path": "/product.php?pic=2",
+      "status": 200,
+      "len": 6368
+    },
+    {
+      "path": "/signup.php",
+      "status": 200,
+      "len": 6033
+    },
+    {
+      "path": "/cart.php",
+      "status": 200,
+      "len": 4903
+    }
+  ]
+}

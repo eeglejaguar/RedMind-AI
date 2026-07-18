@@ -1,0 +1,48 @@
+﻿{
+    "module":  "RM-MOD-006",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "checks":  [
+                                  {
+                                      "method":  "OPTIONS",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "GET",
+                                      "status_code":  301,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "HEAD",
+                                      "status_code":  301,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "POST",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "PUT",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "DELETE",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "TRACE",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  },
+                                  {
+                                      "method":  "PATCH",
+                                      "status_code":  200,
+                                      "allowed":  true
+                                  }
+                              ]
+               }
+}

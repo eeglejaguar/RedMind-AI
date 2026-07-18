@@ -1,0 +1,21 @@
+{
+    "module": "rm_mod_vuln_test.py",
+    "module_path": "modules\\rm_mod_vuln_test.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-10-29T21:52:55.039679Z",
+    "stdout": "{\"module\": \"rm_mod_vuln_test\", \"target\": \"http://www.virtualsec.org/\", \"vulnerable\": true, \"findings\": [\"Example vulnerability: SQLi in /login\"]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_vuln_test",
+        "target": "http://www.virtualsec.org/",
+        "vulnerable": true,
+        "findings": [
+            "Example vulnerability: SQLi in /login"
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-10-29T21:52:55.159434Z"
+}

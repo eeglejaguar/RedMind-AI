@@ -1,0 +1,14 @@
+{
+    "module": "rm_mod_009_server_banner.py",
+    "module_path": "modules\\rm_mod_009_server_banner.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:51:23.987203Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:51:24.051519Z"
+}

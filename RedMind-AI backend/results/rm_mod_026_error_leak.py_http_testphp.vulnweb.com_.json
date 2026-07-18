@@ -1,0 +1,6 @@
+{
+  "module": "rm_mod_026_error_leak",
+  "target": null,
+  "vulnerable": false,
+  "findings": []
+}

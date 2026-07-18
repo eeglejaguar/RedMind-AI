@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_006_http_methods.py",
+    "module_path": "modules\\rm_mod_006_http_methods.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:13.520158Z",
+    "stdout": "{\"module\": \"rm_mod_006_http_methods\", \"target\": \"http://www.virtualsec.org\", \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_006_http_methods",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:15.493320Z"
+}

@@ -1,0 +1,32 @@
+{
+    "module": "rm_mod_011_csp.py",
+    "module_path": "modules\\rm_mod_011_csp.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:25.680550Z",
+    "stdout": "{\n  \"module\": \"rm_mod_011_csp\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"path\": \"/\",\n      \"csp\": \"\"\n    },\n    {\n      \"path\": \"/product.php\",\n      \"csp\": \"\"\n    },\n    {\n      \"path\": \"/login.php\",\n      \"csp\": \"\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_011_csp",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/",
+                "csp": ""
+            },
+            {
+                "path": "/product.php",
+                "csp": ""
+            },
+            {
+                "path": "/login.php",
+                "csp": ""
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:27.670010Z"
+}

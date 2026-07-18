@@ -1,0 +1,6 @@
+{
+  "module": "rm_mod_024_ssrf_surface",
+  "target": null,
+  "vulnerable": false,
+  "findings": []
+}

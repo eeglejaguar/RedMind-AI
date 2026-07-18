@@ -1,0 +1,28 @@
+{
+    "module": "rm_mod_011_csp.py",
+    "module_path": "modules\\rm_mod_011_csp.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:33.753325Z",
+    "stdout": "{\"module\": \"rm_mod_011_csp\", \"target\": \"http://www.virtualsec.org\", \"vulnerable\": true, \"findings\": [{\"path\": \"/\", \"csp\": \"\"}, {\"path\": \"/product.php\", \"csp\": \"\"}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_011_csp",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/",
+                "csp": ""
+            },
+            {
+                "path": "/product.php",
+                "csp": ""
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:37.656670Z"
+}

@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_021_leakage.py",
+    "module_path": "modules\\rm_mod_021_leakage.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:34.126290Z",
+    "stdout": "{\"module\": \"rm_mod_021_leakage\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_021_leakage",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:34.242361Z"
+}

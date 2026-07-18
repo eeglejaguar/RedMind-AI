@@ -1,0 +1,11 @@
+﻿{
+    "module":  "RM-MOD-011",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "has_csp":  false,
+                   "script_src":  false,
+                   "frame_ancestors":  false,
+                   "csp":  null
+               }
+}

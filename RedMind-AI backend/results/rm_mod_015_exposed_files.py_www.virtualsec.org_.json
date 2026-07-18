@@ -1,0 +1,118 @@
+{
+    "target": "http://www.virtualsec.org/",
+    "checks": [
+        {
+            "path": "/.env",
+            "checked_url": "http://www.virtualsec.org/.env",
+            "status": 403,
+            "snippet": "",
+            "issues": []
+        },
+        {
+            "path": "/.git/config",
+            "checked_url": "http://www.virtualsec.org/.git/config",
+            "status": 403,
+            "snippet": "",
+            "issues": []
+        },
+        {
+            "path": "/.git/HEAD",
+            "checked_url": "http://www.virtualsec.org/.git/HEAD",
+            "status": 403,
+            "snippet": "",
+            "issues": []
+        },
+        {
+            "path": "/.htaccess",
+            "checked_url": "http://www.virtualsec.org/.htaccess",
+            "status": 403,
+            "snippet": "",
+            "issues": []
+        },
+        {
+            "path": "/backup.zip",
+            "checked_url": "http://www.virtualsec.org/backup.zip",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/backup.tar.gz",
+            "checked_url": "http://www.virtualsec.org/backup.tar.gz",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/db.sql",
+            "checked_url": "http://www.virtualsec.org/db.sql",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/wp-config.php.bak",
+            "checked_url": "http://www.virtualsec.org/wp-config.php.bak",
+            "status": 403,
+            "snippet": "",
+            "issues": []
+        },
+        {
+            "path": "/config.php.bak",
+            "checked_url": "http://www.virtualsec.org/config.php.bak",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/site.bak",
+            "checked_url": "http://www.virtualsec.org/site.bak",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/id_rsa",
+            "checked_url": "http://www.virtualsec.org/id_rsa",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/id_rsa.pub",
+            "checked_url": "http://www.virtualsec.org/id_rsa.pub",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/credentials.json",
+            "checked_url": "http://www.virtualsec.org/credentials.json",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/composer.lock",
+            "checked_url": "http://www.virtualsec.org/composer.lock",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/package.json",
+            "checked_url": "http://www.virtualsec.org/package.json",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        },
+        {
+            "path": "/web.config",
+            "checked_url": "http://www.virtualsec.org/web.config",
+            "status": 404,
+            "snippet": null,
+            "issues": []
+        }
+    ],
+    "total_checked": 16
+}

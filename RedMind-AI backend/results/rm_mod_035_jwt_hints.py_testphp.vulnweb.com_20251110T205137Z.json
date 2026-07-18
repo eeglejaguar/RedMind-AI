@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_035_jwt_hints.py",
+    "module_path": "modules\\rm_mod_035_jwt_hints.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:51:37.452364Z",
+    "stdout": "{\"module\": \"rm_mod_035_jwt_hints\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_035_jwt_hints",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:51:37.584664Z"
+}

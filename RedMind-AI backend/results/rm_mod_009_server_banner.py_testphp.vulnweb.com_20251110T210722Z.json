@@ -1,0 +1,26 @@
+{
+    "module": "rm_mod_009_server_banner.py",
+    "module_path": "modules\\rm_mod_009_server_banner.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:20.716516Z",
+    "stdout": "{\n  \"module\": \"rm_mod_009_server_banner\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"Server\": \"nginx/1.19.0\"\n    },\n    {\n      \"X-Powered-By\": \"PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\"\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_009_server_banner",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "Server": "nginx/1.19.0"
+            },
+            {
+                "X-Powered-By": "PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1"
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:22.276651Z"
+}

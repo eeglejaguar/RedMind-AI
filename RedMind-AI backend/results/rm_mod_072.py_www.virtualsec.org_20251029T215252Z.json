@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_072.py",
+    "module_path": "modules\\rm_mod_072.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-10-29T21:52:52.833060Z",
+    "stdout": "{\"module\": \"rm_mod_072\", \"target\": \"http://www.virtualsec.org/\", \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_072",
+        "target": "http://www.virtualsec.org/",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-10-29T21:52:52.951417Z"
+}

@@ -1,0 +1,25 @@
+{
+    "module": "rm_mod_010_paths.py",
+    "module_path": "modules\\rm_mod_010_paths.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:22.521812Z",
+    "stdout": "{\n  \"module\": \"rm_mod_010_paths\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"path\": \"/admin/\",\n      \"status\": 200,\n      \"len\": 262\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_010_paths",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/admin/",
+                "status": 200,
+                "len": 262
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:25.428043Z"
+}

@@ -1,0 +1,10 @@
+{
+  "module_id": "RM-MOD-037",
+  "target": "http://testphp.vulnweb.com/",
+  "timestamp_utc": "20251016-135140",
+  "result": {
+    "target": "http://testphp.vulnweb.com/",
+    "status": 200,
+    "libraries": []
+  }
+}

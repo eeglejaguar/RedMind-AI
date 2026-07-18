@@ -1,0 +1,226 @@
+# =====================================================
+# RedMind-AI – VAPT Configuration
+# Single Source of Truth
+# One Attack = One Module
+# Total Attacks: 179
+# =====================================================
+
+VAPT_CHECKS = [
+
+# =========================
+# SQL Injection (001–020)
+# =========================
+{"id":"RM-CHK-001","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-002","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-003","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-004","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-005","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-006","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-007","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-008","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-009","enabled":True,"timeout":25,"dangerous":True},
+{"id":"RM-CHK-010","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-011","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-012","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-013","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-014","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-015","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-016","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-017","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-018","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-019","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-020","enabled":True,"timeout":20,"dangerous":True},
+
+# =========================
+# XSS (021–040)
+# =========================
+{"id":"RM-CHK-021","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-022","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-023","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-024","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-025","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-026","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-027","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-028","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-029","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-030","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-031","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-032","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-033","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-034","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-035","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-036","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-037","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-038","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-039","enabled":True,"timeout":10,"dangerous":True},
+{"id":"RM-CHK-040","enabled":True,"timeout":10,"dangerous":True},
+
+# =========================
+# Authentication & Session (041–060)
+# =========================
+{"id":"RM-CHK-041","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-042","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-043","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-044","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-045","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-046","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-047","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-048","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-049","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-050","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-051","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-052","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-053","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-054","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-055","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-056","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-057","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-058","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-059","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-060","enabled":True,"timeout":15,"dangerous":True},
+
+# =========================
+# IDOR / Access Control (061–080)
+# =========================
+{"id":"RM-CHK-061","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-062","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-063","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-064","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-065","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-066","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-067","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-068","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-069","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-070","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-071","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-072","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-073","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-074","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-075","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-076","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-077","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-078","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-079","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-080","enabled":True,"timeout":15,"dangerous":True},
+
+# =========================
+# SSRF / File / RCE (081–120)
+# =========================
+{"id":"RM-CHK-081","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-082","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-083","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-084","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-085","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-086","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-087","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-088","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-089","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-090","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-091","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-092","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-093","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-094","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-095","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-096","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-097","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-098","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-099","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-100","enabled":True,"timeout":20,"dangerous":True},
+
+{"id":"RM-CHK-101","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-102","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-103","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-104","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-105","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-106","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-107","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-108","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-109","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-110","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-111","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-112","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-113","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-114","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-115","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-116","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-117","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-118","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-119","enabled":True,"timeout":20,"dangerous":True},
+{"id":"RM-CHK-120","enabled":True,"timeout":20,"dangerous":True},
+
+# =========================
+# API / Logic / Deployment (121–179)
+# =========================
+{"id":"RM-CHK-121","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-122","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-123","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-124","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-125","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-126","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-127","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-128","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-129","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-130","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-131","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-132","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-133","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-134","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-135","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-136","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-137","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-138","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-139","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-140","enabled":True,"timeout":15,"dangerous":True},
+
+{"id":"RM-CHK-141","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-142","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-143","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-144","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-145","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-146","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-147","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-148","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-149","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-150","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-151","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-152","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-153","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-154","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-155","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-156","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-157","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-158","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-159","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-160","enabled":True,"timeout":15,"dangerous":True},
+
+{"id":"RM-CHK-161","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-162","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-163","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-164","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-165","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-166","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-167","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-168","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-169","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-170","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-171","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-172","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-173","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-174","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-175","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-176","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-177","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-178","enabled":True,"timeout":15,"dangerous":True},
+{"id":"RM-CHK-179","enabled":True,"timeout":15,"dangerous":True},
+
+]
+def generate_checks():
+    checks = []
+    for i in range(1, 180):
+        checks.append({
+            "id": f"RM-CHK-{i:03d}",
+            "enabled": True,
+            "timeout": 15,
+            "dangerous": True if i <= 120 else False
+        })
+    return checks

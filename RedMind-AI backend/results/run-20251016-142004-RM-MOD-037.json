@@ -1,0 +1,12 @@
+{
+  "module_id": "RM-MOD-037",
+  "target": "http://127.0.0.1:3002/local_lib_test.html",
+  "timestamp_utc": "20251016-142004",
+  "result": {
+    "target": "http://127.0.0.1:3002/local_lib_test.html",
+    "status": 200,
+    "candidates_inspected": 2,
+    "libraries": [],
+    "raw_findings_count": 2
+  }
+}

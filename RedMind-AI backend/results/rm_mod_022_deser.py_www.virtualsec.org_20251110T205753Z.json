@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_022_deser.py",
+    "module_path": "modules\\rm_mod_022_deser.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:53.349599Z",
+    "stdout": "{\"module\": \"rm_mod_022_deser\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_022_deser",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:53.451445Z"
+}

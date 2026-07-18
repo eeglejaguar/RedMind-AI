@@ -1,0 +1,22 @@
+﻿{
+    "module":  "RM-MOD-003",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "checks":  [
+                                  {
+                                      "param":  "q",
+                                      "payload":  "\u003cscript\u003ealert(1)\u003c/script\u003e",
+                                      "url":  "https://www.virtualsec.org?q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E",
+                                      "status_code":  200,
+                                      "reflected":  false
+                                  },
+                                  {
+                                      "param":  "q",
+                                      "payload":  "\"\u003e\u003cimg src=x onerror=alert(1)\u003e",
+                                      "url":  "https://www.virtualsec.org?q=%22%3E%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E",
+                                      "status_code":  403,
+                                      "reflected":  false
+                                  }
+                              ]
+               }
+}

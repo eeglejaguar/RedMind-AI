@@ -1,0 +1,12 @@
+{
+  "module_id": "RM-MOD-018",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122402",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "probe_url": "https://www.virtualsec.org?callback=testcb",
+    "status_code": 200,
+    "jsonp": false,
+    "snippet": "<!doctype html>\r\n<html lang=\"en-US\" prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#\" itemscope itemtype=\"http://schema.org/Offer\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Virtual Security-Architect o"
+  }
+}

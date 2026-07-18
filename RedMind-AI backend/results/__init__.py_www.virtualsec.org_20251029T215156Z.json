@@ -1,0 +1,14 @@
+{
+    "module": "__init__.py",
+    "module_path": "modules\\__init__.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-10-29T21:51:56.657895Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:51:56.717891Z"
+}

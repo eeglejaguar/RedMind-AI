@@ -1,0 +1,8 @@
+﻿{
+    "module":  "RM-MOD-001",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "x_powered_by":  "Not Found"
+               }
+}

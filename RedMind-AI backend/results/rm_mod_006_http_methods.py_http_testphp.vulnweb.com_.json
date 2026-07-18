@@ -1,0 +1,17 @@
+{
+  "module": "rm_mod_006_http_methods",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/product.php",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/product.php",
+      "method": "DELETE",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿{
+    "module":  "RM-MOD-013",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "hsts":  {
+                                "has_hsts":  false
+                            }
+               }
+}

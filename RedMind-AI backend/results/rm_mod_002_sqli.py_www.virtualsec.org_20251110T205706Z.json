@@ -1,0 +1,57 @@
+{
+    "module": "rm_mod_002_sqli.py",
+    "module_path": "modules\\rm_mod_002_sqli.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:56:58.640525Z",
+    "stdout": "{\n  \"module\": \"rm_mod_002_sqli\",\n  \"target\": \"http://www.virtualsec.org\",\n  \"vulnerable\": false,\n  \"findings\": [],\n  \"debug\": [\n    {\n      \"path\": \"/listproducts.php\",\n      \"good_status\": 404,\n      \"bad_status\": 403,\n      \"good_len\": 68713,\n      \"bad_len\": 1242,\n      \"len_diff\": 67471,\n      \"err_like\": false\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"good_status\": 404,\n      \"bad_status\": 403,\n      \"good_len\": 68708,\n      \"bad_len\": 1242,\n      \"len_diff\": 67466,\n      \"err_like\": false\n    },\n    {\n      \"path\": \"/listproducts.php\",\n      \"good_status\": 404,\n      \"bad_status\": 403,\n      \"good_len\": 68716,\n      \"bad_len\": 1242,\n      \"len_diff\": 67474,\n      \"err_like\": false\n    },\n    {\n      \"path\": \"/artists.php\",\n      \"good_status\": 404,\n      \"bad_status\": 403,\n      \"good_len\": 68711,\n      \"bad_len\": 1242,\n      \"len_diff\": 67469,\n      \"err_like\": false\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_002_sqli",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": false,
+        "findings": [],
+        "debug": [
+            {
+                "path": "/listproducts.php",
+                "good_status": 404,
+                "bad_status": 403,
+                "good_len": 68713,
+                "bad_len": 1242,
+                "len_diff": 67471,
+                "err_like": false
+            },
+            {
+                "path": "/artists.php",
+                "good_status": 404,
+                "bad_status": 403,
+                "good_len": 68708,
+                "bad_len": 1242,
+                "len_diff": 67466,
+                "err_like": false
+            },
+            {
+                "path": "/listproducts.php",
+                "good_status": 404,
+                "bad_status": 403,
+                "good_len": 68716,
+                "bad_len": 1242,
+                "len_diff": 67474,
+                "err_like": false
+            },
+            {
+                "path": "/artists.php",
+                "good_status": 404,
+                "bad_status": 403,
+                "good_len": 68711,
+                "bad_len": 1242,
+                "len_diff": 67469,
+                "err_like": false
+            }
+        ]
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:06.777062Z"
+}

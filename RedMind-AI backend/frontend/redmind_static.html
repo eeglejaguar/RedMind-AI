@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>RedMind-AI - Quick Scan</title>
+  <style>
+    body{font-family:sans-serif;padding:20px;max-width:900px;margin:auto}
+    input{padding:8px;width:60%}
+    button{padding:8px 12px}
+    pre{background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  </style>
+</head>
+<body>
+  <h1>RedMind‑AI — Quick Scan</h1>
+  <input id="target" placeholder="https://example.com or http://localhost:3001"/>
+  <button id="run">Run scan</button>
+  <button id="clear">Clear</button>
+
+  <h3>Logs</h3>
+  <div id="logs" style="background:#fafafa;padding:8px;height:200px;overflow:auto"></div>
+
+  <h3>Results</h3>
+  <div id="results"></div>
+
+<script>
+const modules = ["RM-MOD-001","RM-MOD-002","RM-MOD-003","RM-MOD-004","RM-MOD-005","RM-MOD-006","RM-MOD-007","RM-MOD-008","RM-MOD-009","RM-MOD-010","RM-MOD-011","RM-MOD-012","RM-MOD-013","RM-MOD-014","RM-MOD-015","RM-MOD-016","RM-MOD-017","RM-MOD-018","RM-MOD-019","RM-MOD-020","RM-MOD-021","RM-MOD-037","RM-MOD-062"];
+
+function log(m){ const d=new Date().toLocaleTimeString(); document.getElementById('logs').innerHTML += `[${d}] ${m}<br/>`; }
+function showResult(obj){ const div=document.createElement('div'); div.style.border='1px solid #eee'; div.style.padding='8px'; div.style.marginTop='8px'; div.innerHTML = `<strong>${obj.module}</strong><pre>${obj.error?obj.error:JSON.stringify(obj.result||obj, null, 2)}</pre>`; document.getElementById('results').appendChild(div); }
+
+document.getElementById('run').addEventListener('click', async ()=>{
+  const target = document.getElementById('target').value.trim();
+  if(!target){ alert('Enter target'); return; }
+  document.getElementById('results').innerHTML=''; document.getElementById('logs').innerHTML='';
+  log('Starting scan for '+target);
+
+  for(const mod of modules){
+    log('Running '+mod);
+    try{
+      const resp = await fetch('http://127.0.0.1:8000/run', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({module_id:mod, target:target, context:{}})
+      });
+      if(!resp.ok){ const txt = await resp.text(); log(`${mod} -> HTTP ${resp.status}`); showResult({module:mod, error:txt}); }
+      else { const j = await resp.json(); log(`${mod} -> Done`); showResult({module:mod, result:j.result||j}); }
+    } catch(e){
+      log(`${mod} -> Error: ${e.message}`); showResult({module:mod, error:e.message});
+    }
+  }
+  log('Scan finished');
+});
+
+document.getElementById('clear').addEventListener('click', ()=>{ document.getElementById('results').innerHTML=''; document.getElementById('logs').innerHTML=''; });
+</script>
+</body>
+</html>

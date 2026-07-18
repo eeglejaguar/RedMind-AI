@@ -1,0 +1,24 @@
+{
+    "module": "rm_mod_005_dirlist.py",
+    "module_path": "modules\\rm_mod_005_dirlist.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:10.232826Z",
+    "stdout": "{\n  \"module\": \"rm_mod_005_dirlist\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"path\": \"/admin/\",\n      \"status\": 200\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_005_dirlist",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/admin/",
+                "status": 200
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:12.231921Z"
+}

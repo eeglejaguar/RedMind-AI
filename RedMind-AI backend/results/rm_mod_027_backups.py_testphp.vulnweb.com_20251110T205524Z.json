@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_027_backups.py",
+    "module_path": "modules\\rm_mod_027_backups.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:55:24.229661Z",
+    "stdout": "{\"module\": \"rm_mod_027_backups\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_027_backups",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:55:24.328098Z"
+}

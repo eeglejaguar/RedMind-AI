@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_004_openredirect.py",
+    "module_path": "modules\\rm_mod_004_openredirect.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T22:06:26.850407Z",
+    "stdout": "{\"module\": \"rm_mod_004_openredirect\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_004_openredirect",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-10-29T22:06:26.943628Z"
+}

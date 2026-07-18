@@ -1,0 +1,19 @@
+{
+    "module": "__init__.py",
+    "module_path": "modules\\__init__.py",
+    "target": "http://www.virtualsec.org/",
+    "started_at": "2025-11-10T20:56:58.183772Z",
+    "stdout": "{\"module\": \"__init__\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "__init__",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:56:58.288191Z"
+}

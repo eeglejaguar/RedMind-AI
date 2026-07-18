@@ -1,0 +1,22 @@
+{
+  "module": "rm_mod_007_clickjack",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": true,
+  "findings": [
+    {
+      "path": "/",
+      "xfo": "",
+      "csp": ""
+    },
+    {
+      "path": "/product.php",
+      "xfo": "",
+      "csp": ""
+    },
+    {
+      "path": "/login.php",
+      "xfo": "",
+      "csp": ""
+    }
+  ]
+}

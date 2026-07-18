@@ -1,0 +1,19 @@
+{
+    "module": "example_attack.py",
+    "module_path": "modules\\example_attack.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-10-29T22:06:26.107154Z",
+    "stdout": "{\"module\": \"example_attack\", \"target\": null, \"vulnerable\": false, \"findings\": []}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "example_attack",
+        "target": null,
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-10-29T22:06:26.202139Z"
+}

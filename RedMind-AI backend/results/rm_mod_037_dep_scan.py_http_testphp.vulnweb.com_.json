@@ -1,0 +1,7 @@
+{
+  "target": "http://testphp.vulnweb.com/",
+  "status": 200,
+  "candidates_inspected": 0,
+  "libraries": [],
+  "raw_findings_count": 0
+}

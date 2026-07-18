@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_030_lfi_surface.py",
+    "module_path": "modules\\rm_mod_030_lfi_surface.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:51:33.593838Z",
+    "stdout": "{\n  \"module\": \"rm_mod_030_lfi_surface\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": false,\n  \"findings\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_030_lfi_surface",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:51:35.945888Z"
+}

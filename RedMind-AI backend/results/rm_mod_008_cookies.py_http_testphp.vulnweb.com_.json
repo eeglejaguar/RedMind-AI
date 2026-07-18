@@ -1,0 +1,6 @@
+{
+  "module": "rm_mod_008_cookies",
+  "target": "http://testphp.vulnweb.com",
+  "vulnerable": false,
+  "findings": []
+}

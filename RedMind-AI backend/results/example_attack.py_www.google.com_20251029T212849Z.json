@@ -1,0 +1,14 @@
+{
+    "module": "example_attack.py",
+    "module_path": "modules\\example_attack.py",
+    "target": "http://www.google.com/",
+    "started_at": "2025-10-29T21:28:49.306626Z",
+    "stdout": "",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": null,
+    "conclusion": "FAILED",
+    "reason": "no JSON output",
+    "error": null,
+    "finished_at": "2025-10-29T21:28:49.372705Z"
+}

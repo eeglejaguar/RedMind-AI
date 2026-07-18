@@ -1,0 +1,22 @@
+{
+  "module_id": "RM-MOD-062",
+  "target": "https://tls-v1-0.badssl.com/",
+  "timestamp_utc": "20251016-132939",
+  "result": {
+    "target": "https://tls-v1-0.badssl.com/",
+    "tls_version": "TLSv1.2",
+    "status": "Safe",
+    "attempts": [
+      {
+        "ok": true,
+        "version": "TLSv1.2",
+        "cipher": [
+          "ECDHE-RSA-AES128-GCM-SHA256",
+          "TLSv1.2",
+          128
+        ],
+        "method": "default"
+      }
+    ]
+  }
+}

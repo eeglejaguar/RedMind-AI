@@ -1,0 +1,16 @@
+{
+  "module_id": "RM-MOD-016",
+  "target": "https://www.virtualsec.org",
+  "timestamp_utc": "20251016-122359",
+  "result": {
+    "target": "https://www.virtualsec.org",
+    "status_code": 200,
+    "disallows": [
+      "/wp-content/uploads/wc-logs/",
+      "/wp-content/uploads/woocommerce_transient_files/",
+      "/wp-content/uploads/woocommerce_uploads/",
+      "/wp-admin/"
+    ],
+    "robots": "User-agent: *\nDisallow: /wp-content/uploads/wc-logs/\nDisallow: /wp-content/uploads/woocommerce_transient_files/\nDisallow: /wp-content/uploads/woocommerce_uploads/\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://virtualsec.org/wp-sitemap.xml\n"
+  }
+}

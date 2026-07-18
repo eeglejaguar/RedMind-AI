@@ -1,0 +1,51 @@
+{
+  "module_id": "RM-MOD-062",
+  "target": "https://tls-v1-0.badssl.com:1010/",
+  "timestamp_utc": "20251016-132911",
+  "result": {
+    "target": "https://tls-v1-0.badssl.com:1010/",
+    "error": "no-successful-handshake",
+    "attempts": [
+      {
+        "ok": false,
+        "error": "[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)",
+        "method": "default"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: NO_CIPHERS_AVAILABLE] no ciphers available (_ssl.c:997)",
+        "method": "force_TLSv1"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: NO_CIPHERS_AVAILABLE] no ciphers available (_ssl.c:997)",
+        "method": "force_TLSv1_1"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)",
+        "method": "force_TLSv1_2"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: NO_CIPHERS_AVAILABLE] no ciphers available (_ssl.c:997)",
+        "method": "set_minmax_TLSv1"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: NO_CIPHERS_AVAILABLE] no ciphers available (_ssl.c:997)",
+        "method": "set_minmax_TLSv1_1"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)",
+        "method": "set_minmax_TLSv1_2"
+      },
+      {
+        "ok": false,
+        "error": "[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)",
+        "method": "set_minmax_TLSv1_3"
+      }
+    ]
+  }
+}

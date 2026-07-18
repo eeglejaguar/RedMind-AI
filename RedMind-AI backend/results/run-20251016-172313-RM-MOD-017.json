@@ -1,0 +1,9 @@
+﻿{
+    "module":  "RM-MOD-017",
+    "result":  {
+                   "target":  "https://www.virtualsec.org",
+                   "status_code":  200,
+                   "cors_origin":  null,
+                   "insecure_cors":  false
+               }
+}

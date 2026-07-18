@@ -1,0 +1,35 @@
+{
+    "module": "rm_mod_007_clickjack.py",
+    "module_path": "modules\\rm_mod_007_clickjack.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T20:55:04.894204Z",
+    "stdout": "{\"module\": \"rm_mod_007_clickjack\", \"target\": \"http://testphp.vulnweb.com\", \"vulnerable\": true, \"findings\": [{\"path\": \"/\", \"xfo\": \"\", \"csp\": \"\"}, {\"path\": \"/product.php\", \"xfo\": \"\", \"csp\": \"\"}, {\"path\": \"/login.php\", \"xfo\": \"\", \"csp\": \"\"}]}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_007_clickjack",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": true,
+        "findings": [
+            {
+                "path": "/",
+                "xfo": "",
+                "csp": ""
+            },
+            {
+                "path": "/product.php",
+                "xfo": "",
+                "csp": ""
+            },
+            {
+                "path": "/login.php",
+                "xfo": "",
+                "csp": ""
+            }
+        ]
+    },
+    "conclusion": "VULNERABLE",
+    "reason": "module reported vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T20:55:07.034090Z"
+}

@@ -1,0 +1,19 @@
+{
+    "module": "rm_mod_008_cookies.py",
+    "module_path": "modules\\rm_mod_008_cookies.py",
+    "target": "http://testphp.vulnweb.com/",
+    "started_at": "2025-11-10T21:07:18.838079Z",
+    "stdout": "{\n  \"module\": \"rm_mod_008_cookies\",\n  \"target\": \"http://testphp.vulnweb.com\",\n  \"vulnerable\": false,\n  \"findings\": []\n}\n",
+    "stderr": "",
+    "exit_code": 0,
+    "parsed_json": {
+        "module": "rm_mod_008_cookies",
+        "target": "http://testphp.vulnweb.com",
+        "vulnerable": false,
+        "findings": []
+    },
+    "conclusion": "SAFE",
+    "reason": "module reported not vulnerable",
+    "error": null,
+    "finished_at": "2025-11-10T21:07:20.466297Z"
+}

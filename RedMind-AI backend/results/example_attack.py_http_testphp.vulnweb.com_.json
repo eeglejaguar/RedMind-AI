@@ -1,0 +1,6 @@
+{
+  "module": "example_attack",
+  "target": null,
+  "vulnerable": false,
+  "findings": []
+}
