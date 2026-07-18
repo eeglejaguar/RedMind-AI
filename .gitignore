@@ -1,3 +1,10 @@
+# Environment files
+.env
+*.env
+
+# Specific backend env
+RedMind-AI backend/ai/.env
+
 # Frontend
 
 frontend/node_modules/
